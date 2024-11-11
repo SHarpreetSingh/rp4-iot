@@ -1,0 +1,76 @@
+<!-- <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-database.js"></script> -->
+
+<div>
+    <p>Led status: <span id="status"></span>(led is )</p>
+    <div>
+        <button onclick="sendCommand('turn_on_light')">Turn ON Light</button>
+        <button onclick="sendCommand('turn_off_light')">Turn OFF Light</button>
+    </div>
+</div>
+<script type="module">
+
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.0.0/firebase-app.js";
+    import { getDatabase, ref, set, onValue } from "https://www.gstatic.com/firebasejs/9.0.0/firebase-database.js";
+
+    // Firebase configuration
+    // Your web app's Firebase configuration
+
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    const firebaseConfig = {
+        apiKey: "AIzaSyCGFwk8DwerP7GZdhh2HV0ABIjlSck-uGc",
+        authDomain: "iot-sensor-f3c19.firebaseapp.com",
+        databaseURL: "https://iot-sensor-f3c19-default-rtdb.asia-southeast1.firebasedatabase.app",
+        projectId: "iot-sensor-f3c19",
+        storageBucket: "iot-sensor-f3c19.appspot.com",
+        messagingSenderId: "646283652547",
+        appId: "1:646283652547:web:a106c85fb1605a7f05a176",
+        measurementId: "G-HT2TLZH1KJ"
+    };
+
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    localStorage.setItem('firebase:debug', true);
+    const database = getDatabase(app);
+
+    // // Automatically trigger the Cloud Function to update sensor data when the page loads
+    // window.onload = function() {
+    //     fetch("http://192.168.0.189:5001/iot-sensor-f3c19/us-central1/helloWorld")
+    //     .then(response => {
+    //         console.log('Sensor',response);
+    //         if (response.ok) {
+    //             console.log('Sensor data update triggered successfully!');
+    //         } else {
+    //             console.error('Error triggering the Cloud Function:', response.statusText);
+    //         }
+    //     })
+    //     .catch(error => {
+    //         console.error('Fetch error:', error);
+    //     });
+    // };
+
+
+    // Listen for data changes
+    const sensorRef = ref(database, "sensors");
+    console.log("sensorRef", sensorRef)
+
+    onValue(sensorRef, (snapshot) => {
+        const data = snapshot.val();
+        console.log("=== data", data)
+        document.getElementById('status').innerText = data.status;
+    }, (error) => {
+        console.error("Error fetching data: ", error);
+        // document.getElementById("data").innerHTML = "Error loading data.";
+    });
+
+    async function sendCommand(command) {
+        await set(sensorRef, {
+            status: command,
+        });
+    }
+
+    // Expose sendCommand to the global scope to avoid ReferenceError
+    window.sendCommand = sendCommand;
+
+</script>
+

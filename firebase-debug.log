@@ -1,0 +1,1296 @@
+[debug] [2024-11-06T06:39:33.333Z] ----------------------------------------------------------------------
+[debug] [2024-11-06T06:39:33.339Z] Command:       /home/ubuntu/.nvm/versions/node/v18.20.4/bin/node /home/ubuntu/.nvm/versions/node/v18.20.4/bin/firebase emulators:start
+[debug] [2024-11-06T06:39:33.341Z] CLI Version:   13.20.2
+[debug] [2024-11-06T06:39:33.342Z] Platform:      linux
+[debug] [2024-11-06T06:39:33.342Z] Node Version:  v18.20.4
+[debug] [2024-11-06T06:39:33.344Z] Time:          Wed Nov 06 2024 01:39:33 GMT-0500 (Eastern Standard Time)
+[debug] [2024-11-06T06:39:33.344Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-11-06T06:39:33.354Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2024-11-06T06:39:33.730Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-11-06T06:39:33.732Z] > authorizing via signed-in user (harpreetacclivis78@gmail.com)
+[debug] [2024-11-06T06:39:33.956Z] openjdk version "11.0.24" 2024-07-16
+[debug] [2024-11-06T06:39:33.958Z] 
+OpenJDK Runtime Environment (build 11.0.24+8-post-Ubuntu-1ubuntu320.04)
+OpenJDK 64-Bit Server VM (build 11.0.24+8-post-Ubuntu-1ubuntu320.04, mixed mode)
+
+[debug] [2024-11-06T06:39:34.365Z] <<< [apiv2][status] GET https://firebase-public.firebaseio.com/cli.json 200
+[debug] [2024-11-06T06:39:34.365Z] <<< [apiv2][body] GET https://firebase-public.firebaseio.com/cli.json {"cloudBuildErrorAfter":1594252800000,"cloudBuildWarnAfter":1590019200000,"defaultNode10After":1594252800000,"minVersion":"3.0.5","node8DeploysDisabledAfter":1613390400000,"node8RuntimeDisabledAfter":1615809600000,"node8WarnAfter":1600128000000}
+[debug] [2024-11-06T06:39:35.037Z] Parsed Java major version: 11
+[info] i  emulators: Starting emulators: functions, database, hosting {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: functions, database, hosting"}}
+[debug] [2024-11-06T06:39:35.056Z] [logging] Logging Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2024-11-06T06:39:35.057Z] assigned listening specs for emulators {"user":{"ui":[{"address":"192.168.0.189","family":"IPv4","port":4000}],"database":[{"address":"192.168.0.189","family":"IPv4","port":9001}],"hosting":[{"address":"192.168.0.189","family":"IPv4","port":5000}],"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}]},"metadata":{"message":"assigned listening specs for emulators"}}
+[debug] [2024-11-06T06:39:35.077Z] [hub] writing locator at /tmp/hub-iot-sensor-f3c19.json
+[debug] [2024-11-06T06:39:36.554Z] [eventarc] Eventarc Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2024-11-06T06:39:36.555Z] [tasks] Cloud Tasks Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2024-11-06T06:39:36.555Z] late-assigned ports for functions and eventarc emulators {"user":{"ui":[{"address":"192.168.0.189","family":"IPv4","port":4000}],"database":[{"address":"192.168.0.189","family":"IPv4","port":9001}],"hosting":[{"address":"192.168.0.189","family":"IPv4","port":5000}],"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"functions":[{"address":"192.168.0.189","family":"IPv4","port":5001}],"eventarc":[{"address":"127.0.0.1","family":"IPv4","port":9299}],"tasks":[{"address":"127.0.0.1","family":"IPv4","port":9499}]},"metadata":{"message":"late-assigned ports for functions and eventarc emulators"}}
+[warn] ⚠  functions: The following emulators are not running, calls to these services from the Functions emulator will affect production: auth, firestore, pubsub, storage, dataconnect {"metadata":{"emulator":{"name":"functions"},"message":"The following emulators are not running, calls to these services from the Functions emulator will affect production: \u001b[1mauth, firestore, pubsub, storage, dataconnect\u001b[22m"}}
+[debug] [2024-11-06T06:39:36.566Z] defaultcredentials: writing to file /home/ubuntu/.config/firebase/harpreetacclivis78_gmail_com_application_default_credentials.json
+[debug] [2024-11-06T06:39:38.118Z] Setting GAC to /home/ubuntu/.config/firebase/harpreetacclivis78_gmail_com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to /home/ubuntu/.config/firebase/harpreetacclivis78_gmail_com_application_default_credentials.json"}}
+[debug] [2024-11-06T06:39:38.123Z] Checked if tokens are valid: true, expires at: 1730877618690
+[debug] [2024-11-06T06:39:38.126Z] Checked if tokens are valid: true, expires at: 1730877618690
+[debug] [2024-11-06T06:39:38.127Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/iot-sensor-f3c19/adminSdkConfig [none]
+[debug] [2024-11-06T06:39:38.607Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/iot-sensor-f3c19/adminSdkConfig 200
+[debug] [2024-11-06T06:39:38.607Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/iot-sensor-f3c19/adminSdkConfig {"projectId":"iot-sensor-f3c19","databaseURL":"https://iot-sensor-f3c19-default-rtdb.asia-southeast1.firebasedatabase.app","storageBucket":"iot-sensor-f3c19.firebasestorage.app"}
+[debug] [2024-11-06T06:39:39.275Z] Checked if tokens are valid: true, expires at: 1730877618690
+[debug] [2024-11-06T06:39:39.275Z] Checked if tokens are valid: true, expires at: 1730877618690
+[debug] [2024-11-06T06:39:39.277Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/iot-sensor-f3c19 [none]
+[debug] [2024-11-06T06:39:39.719Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/iot-sensor-f3c19 200
+[debug] [2024-11-06T06:39:39.720Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/iot-sensor-f3c19 {"projectId":"iot-sensor-f3c19","projectNumber":"646283652547","displayName":"Iot-sensor","name":"projects/iot-sensor-f3c19","resources":{"hostingSite":"iot-sensor-f3c19","realtimeDatabaseInstance":"iot-sensor-f3c19-default-rtdb"},"state":"ACTIVE","etag":"1_8ff04a36-4976-40ae-89d9-cffb2be2a882"}
+[debug] [2024-11-06T06:39:39.721Z] database rules config:  [{"instance":"iot-sensor-f3c19-default-rtdb","rules":"/home/ubuntu/harpreet/sensorOct07/database.rules.json"}]
+[debug] [2024-11-06T06:39:39.735Z] Ignoring unsupported arg: projectId {"metadata":{"emulator":{"name":"database"},"message":"Ignoring unsupported arg: projectId"}}
+[debug] [2024-11-06T06:39:39.736Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"database"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2024-11-06T06:39:39.736Z] Ignoring unsupported arg: rules {"metadata":{"emulator":{"name":"database"},"message":"Ignoring unsupported arg: rules"}}
+[debug] [2024-11-06T06:39:39.736Z] Starting Database Emulator with command {"binary":"java","args":["-Duser.language=en","-jar","/home/ubuntu/.cache/firebase/emulators/firebase-database-emulator-v4.11.2.jar","--host","192.168.0.189","--port",9001,"--single_project_mode","Warning","--functions_emulator_host","192.168.0.189","--functions_emulator_port",5001],"optionalArgs":["port","host","functions_emulator_port","functions_emulator_host","single_project_mode"],"joinArgs":false,"shell":false,"port":9001} {"metadata":{"emulator":{"name":"database"},"message":"Starting Database Emulator with command {\"binary\":\"java\",\"args\":[\"-Duser.language=en\",\"-jar\",\"/home/ubuntu/.cache/firebase/emulators/firebase-database-emulator-v4.11.2.jar\",\"--host\",\"192.168.0.189\",\"--port\",9001,\"--single_project_mode\",\"Warning\",\"--functions_emulator_host\",\"192.168.0.189\",\"--functions_emulator_port\",5001],\"optionalArgs\":[\"port\",\"host\",\"functions_emulator_port\",\"functions_emulator_host\",\"single_project_mode\"],\"joinArgs\":false,\"shell\":false,\"port\":9001}"}}
+[info] i  database: Database Emulator logging to database-debug.log {"metadata":{"emulator":{"name":"database"},"message":"Database Emulator logging to \u001b[1mdatabase-debug.log\u001b[22m"}}
+[debug] [2024-11-06T06:39:41.965Z] WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by io.netty.util.internal.ReflectionUtil (file:/home/ubuntu/.cache/firebase/emulators/firebase-database-emulator-v4.11.2.jar) to field sun.nio.ch.SelectorImpl.selectedKeys
+WARNING: Please consider reporting this to the maintainers of io.netty.util.internal.ReflectionUtil
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release {"metadata":{"emulator":{"name":"database"},"message":"WARNING: An illegal reflective access operation has occurred\nWARNING: Illegal reflective access by io.netty.util.internal.ReflectionUtil (file:/home/ubuntu/.cache/firebase/emulators/firebase-database-emulator-v4.11.2.jar) to field sun.nio.ch.SelectorImpl.selectedKeys\nWARNING: Please consider reporting this to the maintainers of io.netty.util.internal.ReflectionUtil\nWARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations\nWARNING: All illegal access operations will be denied in a future release"}}
+[debug] [2024-11-06T06:39:41.967Z] 
+ {"metadata":{"emulator":{"name":"database"},"message":"\n"}}
+[debug] [2024-11-06T06:39:44.416Z] 01:39:44.407 [NamespaceSystem-akka.actor.default-dispatcher-4] INFO akka.event.slf4j.Slf4jLogger - Slf4jLogger started
+ {"metadata":{"emulator":{"name":"database"},"message":"01:39:44.407 [NamespaceSystem-akka.actor.default-dispatcher-4] INFO akka.event.slf4j.Slf4jLogger - Slf4jLogger started\n"}}
+[debug] [2024-11-06T06:39:45.043Z] 01:39:45.042 [main] INFO com.firebase.server.forge.App$ - Listening at 192.168.0.189:9001
+ {"metadata":{"emulator":{"name":"database"},"message":"01:39:45.042 [main] INFO com.firebase.server.forge.App$ - Listening at 192.168.0.189:9001\n"}}
+[debug] [2024-11-06T06:39:45.261Z] Checked if tokens are valid: true, expires at: 1730877618690
+[debug] [2024-11-06T06:39:45.262Z] Checked if tokens are valid: true, expires at: 1730877618690
+[debug] [2024-11-06T06:39:45.266Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/iot-sensor-f3c19/sites 
+[debug] [2024-11-06T06:39:46.375Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/iot-sensor-f3c19/sites 200
+[debug] [2024-11-06T06:39:46.376Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/iot-sensor-f3c19/sites {"sites":[{"name":"projects/iot-sensor-f3c19/sites/iot-sensor-f3c19","defaultUrl":"https://iot-sensor-f3c19.web.app","appId":"1:646283652547:web:a106c85fb1605a7f05a176","type":"DEFAULT_SITE"}]}
+[debug] [2024-11-06T06:39:46.377Z] Checked if tokens are valid: true, expires at: 1730877618690
+[debug] [2024-11-06T06:39:46.377Z] Checked if tokens are valid: true, expires at: 1730877618690
+[debug] [2024-11-06T06:39:46.378Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/iot-sensor-f3c19/webApps/1:646283652547:web:a106c85fb1605a7f05a176/config [none]
+[debug] [2024-11-06T06:39:47.261Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/iot-sensor-f3c19/webApps/1:646283652547:web:a106c85fb1605a7f05a176/config 200
+[debug] [2024-11-06T06:39:47.262Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/iot-sensor-f3c19/webApps/1:646283652547:web:a106c85fb1605a7f05a176/config {"projectId":"iot-sensor-f3c19","appId":"1:646283652547:web:a106c85fb1605a7f05a176","databaseURL":"https://iot-sensor-f3c19-default-rtdb.asia-southeast1.firebasedatabase.app","storageBucket":"iot-sensor-f3c19.firebasestorage.app","apiKey":"AIzaSyCGFwk8DwerP7GZdhh2HV0ABIjlSck-uGc","authDomain":"iot-sensor-f3c19.firebaseapp.com","messagingSenderId":"646283652547","measurementId":"G-HT2TLZH1KJ"}
+[debug] [2024-11-06T06:39:47.312Z] Checked if tokens are valid: true, expires at: 1730877618690
+[debug] [2024-11-06T06:39:47.312Z] Checked if tokens are valid: true, expires at: 1730877618690
+[debug] [2024-11-06T06:39:47.313Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/iot-sensor-f3c19 [none]
+[debug] [2024-11-06T06:39:47.704Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/iot-sensor-f3c19 200
+[debug] [2024-11-06T06:39:47.705Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/iot-sensor-f3c19 {"projectId":"iot-sensor-f3c19","projectNumber":"646283652547","displayName":"Iot-sensor","name":"projects/iot-sensor-f3c19","resources":{"hostingSite":"iot-sensor-f3c19","realtimeDatabaseInstance":"iot-sensor-f3c19-default-rtdb"},"state":"ACTIVE","etag":"1_8ff04a36-4976-40ae-89d9-cffb2be2a882"}
+[info] i  hosting[iot-sensor-f3c19]: Serving hosting files from: public {"metadata":{"emulator":{"name":"hosting"},"message":"Serving hosting files from: \u001b[1mpublic\u001b[22m"}}
+[info] ✔  hosting[iot-sensor-f3c19]: Local server: http://192.168.0.189:5000 {"metadata":{"emulator":{"name":"hosting"},"message":"Local server: \u001b[4m\u001b[1mhttp://192.168.0.189:5000\u001b[22m\u001b[24m"}}
+[debug] [2024-11-06T06:39:47.758Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2024-11-06T06:39:47.758Z] Ignoring unsupported arg: port {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: port"}}
+[debug] [2024-11-06T06:39:47.759Z] Starting Emulator UI with command {"binary":"node","args":["/home/ubuntu/.cache/firebase/emulators/ui-v1.13.0/server/server.mjs"],"optionalArgs":[],"joinArgs":false,"shell":false,"port":4000} {"metadata":{"emulator":{"name":"ui"},"message":"Starting Emulator UI with command {\"binary\":\"node\",\"args\":[\"/home/ubuntu/.cache/firebase/emulators/ui-v1.13.0/server/server.mjs\"],\"optionalArgs\":[],\"joinArgs\":false,\"shell\":false,\"port\":4000}"}}
+[info] i  ui: Emulator UI logging to ui-debug.log {"metadata":{"emulator":{"name":"ui"},"message":"Emulator UI logging to \u001b[1mui-debug.log\u001b[22m"}}
+[debug] [2024-11-06T06:39:48.117Z] Web / API server started at 192.168.0.189:4000
+ {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at 192.168.0.189:4000\n"}}
+[info] i  functions: Watching "/home/ubuntu/harpreet/sensorOct07/functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"/home/ubuntu/harpreet/sensorOct07/functions\" for Cloud Functions..."}}
+[debug] [2024-11-06T06:39:48.209Z] Validating nodejs source
+[warn] ⚠  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] ⚠  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2024-11-06T06:39:49.872Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^12.1.0",
+    "firebase-functions": "^5.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2024-11-06T06:39:49.873Z] Building nodejs source
+[debug] [2024-11-06T06:39:49.874Z] Failed to find version of module node: reached end of search path /home/ubuntu/harpreet/sensorOct07/functions/node_modules
+[info] ✔  functions: Using node@18 from host. 
+[debug] [2024-11-06T06:39:49.882Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-11-06T06:39:49.893Z] Found firebase-functions binary at '/home/ubuntu/harpreet/sensorOct07/functions/node_modules/.bin/firebase-functions'
+[info] Serving at port 8114
+
+[debug] [2024-11-06T06:39:50.958Z] Got response from /__/functions.yaml {"endpoints":{"helloWorld":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","labels":{},"httpsTrigger":{},"entryPoint":"helloWorld"}},"specVersion":"v1alpha1","requiredAPIs":[],"extensions":{}}
+[info] ✔  functions: Loaded functions definitions from source: helloWorld. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: helloWorld."}}
+[info] ✔  functions[us-central1-helloWorld]: http function initialized (http://192.168.0.189:5001/iot-sensor-f3c19/us-central1/helloWorld). {"metadata":{"emulator":{"name":"functions"},"message":"\u001b[1mhttp\u001b[22m function initialized (http://192.168.0.189:5001/iot-sensor-f3c19/us-central1/helloWorld)."}}
+[debug] [2024-11-06T06:39:51.047Z] >>> [apiv2][query] PUT http://192.168.0.189:9001/.settings/rules.json ns=iot-sensor-f3c19-default-rtdb
+[debug] [2024-11-06T06:39:51.048Z] >>> [apiv2][body] PUT http://192.168.0.189:9001/.settings/rules.json "{\n  \"rules\": {\n    \".read\": true,  // 2024-11-6\n    \".write\": true  // 2024-11-6\n  }\n}"
+[debug] [2024-11-06T06:39:52.040Z] 01:39:52.039 [NamespaceSystem-akka.actor.default-dispatcher-4] INFO com.firebase.core.namespace.NamespaceActor - iot-sensor-f3c19-default-rtdb successfully activated FBKV (SurveyIdle(0)) wait: 474ms, init: 0ms
+ {"metadata":{"emulator":{"name":"database"},"message":"01:39:52.039 [NamespaceSystem-akka.actor.default-dispatcher-4] INFO com.firebase.core.namespace.NamespaceActor - iot-sensor-f3c19-default-rtdb successfully activated FBKV (SurveyIdle(0)) wait: 474ms, init: 0ms\n"}}
+[debug] [2024-11-06T06:39:52.387Z] 01:39:52.386 [NamespaceSystem-blocking-namespace-operation-dispatcher-6] INFO com.firebase.core.namespace.StateManager - Namespace iot-sensor-f3c19-default-rtdb status Active to Active
+ {"metadata":{"emulator":{"name":"database"},"message":"01:39:52.386 [NamespaceSystem-blocking-namespace-operation-dispatcher-6] INFO com.firebase.core.namespace.StateManager - Namespace iot-sensor-f3c19-default-rtdb status Active to Active\n"}}
+[debug] [2024-11-06T06:39:52.595Z] <<< [apiv2][status] PUT http://192.168.0.189:9001/.settings/rules.json 200
+[debug] [2024-11-06T06:39:52.596Z] <<< [apiv2][body] PUT http://192.168.0.189:9001/.settings/rules.json {"status":"ok"}
+[debug] [2024-11-06T06:39:52.610Z] Could not find VSCode notification endpoint: FetchError: request to http://localhost:40001/vscode/notify failed, reason: connect ECONNREFUSED 127.0.0.1:40001
+[info] 
+┌─────────────────────────────────────────────────────────────┐
+│ ✔  All emulators ready! It is now safe to connect your app. │
+│ i  View Emulator UI at http://192.168.0.189:4000/           │
+└─────────────────────────────────────────────────────────────┘
+
+┌───────────┬────────────────────┬─────────────────────────────────────┐
+│ Emulator  │ Host:Port          │ View in Emulator UI                 │
+├───────────┼────────────────────┼─────────────────────────────────────┤
+│ Functions │ 192.168.0.189:5001 │ http://192.168.0.189:4000/functions │
+├───────────┼────────────────────┼─────────────────────────────────────┤
+│ Database  │ 192.168.0.189:9001 │ http://192.168.0.189:4000/database  │
+├───────────┼────────────────────┼─────────────────────────────────────┤
+│ Hosting   │ 192.168.0.189:5000 │ n/a                                 │
+└───────────┴────────────────────┴─────────────────────────────────────┘
+  Emulator Hub running at 127.0.0.1:4400
+  Other reserved ports: 4500
+
+Issues? Report them at https://github.com/firebase/firebase-tools/issues and attach the *-debug.log files.
+ 
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            [debug] [2024-11-07T06:40:54.643Z] ----------------------------------------------------------------------
+[debug] [2024-11-07T06:40:54.650Z] Command:       /home/ubuntu/.nvm/versions/node/v18.20.4/bin/node /home/ubuntu/.nvm/versions/node/v18.20.4/bin/firebase emulators:start
+[debug] [2024-11-07T06:40:54.652Z] CLI Version:   13.20.2
+[debug] [2024-11-07T06:40:54.652Z] Platform:      linux
+[debug] [2024-11-07T06:40:54.653Z] Node Version:  v18.20.4
+[debug] [2024-11-07T06:40:54.702Z] Time:          Thu Nov 07 2024 01:40:54 GMT-0500 (Eastern Standard Time)
+[debug] [2024-11-07T06:40:54.703Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-11-07T06:40:54.719Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2024-11-07T06:40:55.108Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-11-07T06:40:55.109Z] > authorizing via signed-in user (harpreetacclivis78@gmail.com)
+[debug] [2024-11-07T06:40:55.334Z] openjdk version "11.0.24" 2024-07-16
+[debug] [2024-11-07T06:40:55.335Z] 
+OpenJDK Runtime Environment (build 11.0.24+8-post-Ubuntu-1ubuntu320.04)
+OpenJDK 64-Bit Server VM (build 11.0.24+8-post-Ubuntu-1ubuntu320.04, mixed mode)
+
+[debug] [2024-11-07T06:40:55.462Z] Parsed Java major version: 11
+[info] i  emulators: Starting emulators: functions, database, hosting {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: functions, database, hosting"}}
+[debug] [2024-11-07T06:40:55.485Z] [logging] Logging Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2024-11-07T06:40:55.487Z] assigned listening specs for emulators {"user":{"ui":[{"address":"192.168.0.189","family":"IPv4","port":4000}],"database":[{"address":"192.168.0.189","family":"IPv4","port":9001}],"hosting":[{"address":"192.168.0.189","family":"IPv4","port":5000}],"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}]},"metadata":{"message":"assigned listening specs for emulators"}}
+[debug] [2024-11-07T06:40:55.507Z] [hub] writing locator at /tmp/hub-iot-sensor-f3c19.json
+[debug] [2024-11-07T06:40:55.526Z] [eventarc] Eventarc Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2024-11-07T06:40:55.527Z] [tasks] Cloud Tasks Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2024-11-07T06:40:55.528Z] late-assigned ports for functions and eventarc emulators {"user":{"ui":[{"address":"192.168.0.189","family":"IPv4","port":4000}],"database":[{"address":"192.168.0.189","family":"IPv4","port":9001}],"hosting":[{"address":"192.168.0.189","family":"IPv4","port":5000}],"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"functions":[{"address":"192.168.0.189","family":"IPv4","port":5001}],"eventarc":[{"address":"127.0.0.1","family":"IPv4","port":9299}],"tasks":[{"address":"127.0.0.1","family":"IPv4","port":9499}]},"metadata":{"message":"late-assigned ports for functions and eventarc emulators"}}
+[warn] ⚠  functions: The following emulators are not running, calls to these services from the Functions emulator will affect production: auth, firestore, pubsub, storage, dataconnect {"metadata":{"emulator":{"name":"functions"},"message":"The following emulators are not running, calls to these services from the Functions emulator will affect production: \u001b[1mauth, firestore, pubsub, storage, dataconnect\u001b[22m"}}
+[debug] [2024-11-07T06:40:55.538Z] defaultcredentials: writing to file /home/ubuntu/.config/firebase/harpreetacclivis78_gmail_com_application_default_credentials.json
+[debug] [2024-11-07T06:40:55.742Z] <<< [apiv2][status] GET https://firebase-public.firebaseio.com/cli.json 200
+[debug] [2024-11-07T06:40:55.744Z] <<< [apiv2][body] GET https://firebase-public.firebaseio.com/cli.json {"cloudBuildErrorAfter":1594252800000,"cloudBuildWarnAfter":1590019200000,"defaultNode10After":1594252800000,"minVersion":"3.0.5","node8DeploysDisabledAfter":1613390400000,"node8RuntimeDisabledAfter":1615809600000,"node8WarnAfter":1600128000000}
+[debug] [2024-11-07T06:40:56.500Z] Setting GAC to /home/ubuntu/.config/firebase/harpreetacclivis78_gmail_com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to /home/ubuntu/.config/firebase/harpreetacclivis78_gmail_com_application_default_credentials.json"}}
+[debug] [2024-11-07T06:40:56.505Z] Checked if tokens are valid: false, expires at: 1730877618690
+[debug] [2024-11-07T06:40:56.507Z] Checked if tokens are valid: false, expires at: 1730877618690
+[debug] [2024-11-07T06:40:56.508Z] > refreshing access token with scopes: []
+[debug] [2024-11-07T06:40:56.512Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2024-11-07T06:40:56.512Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-11-07T06:40:56.725Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2024-11-07T06:40:56.726Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-11-07T06:40:57.212Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/iot-sensor-f3c19/adminSdkConfig [none]
+[debug] [2024-11-07T06:40:57.669Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/iot-sensor-f3c19/adminSdkConfig 200
+[debug] [2024-11-07T06:40:57.670Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/iot-sensor-f3c19/adminSdkConfig {"projectId":"iot-sensor-f3c19","databaseURL":"https://iot-sensor-f3c19-default-rtdb.asia-southeast1.firebasedatabase.app","storageBucket":"iot-sensor-f3c19.firebasestorage.app"}
+[debug] [2024-11-07T06:41:00.649Z] Checked if tokens are valid: true, expires at: 1730965255726
+[debug] [2024-11-07T06:41:00.650Z] Checked if tokens are valid: true, expires at: 1730965255726
+[debug] [2024-11-07T06:41:00.651Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/iot-sensor-f3c19 [none]
+[debug] [2024-11-07T06:41:01.070Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/iot-sensor-f3c19 200
+[debug] [2024-11-07T06:41:01.070Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/iot-sensor-f3c19 {"projectId":"iot-sensor-f3c19","projectNumber":"646283652547","displayName":"Iot-sensor","name":"projects/iot-sensor-f3c19","resources":{"hostingSite":"iot-sensor-f3c19","realtimeDatabaseInstance":"iot-sensor-f3c19-default-rtdb"},"state":"ACTIVE","etag":"1_8ff04a36-4976-40ae-89d9-cffb2be2a882"}
+[debug] [2024-11-07T06:41:01.072Z] database rules config:  [{"instance":"iot-sensor-f3c19-default-rtdb","rules":"/home/ubuntu/harpreet/sensorOct07/database.rules.json"}]
+[debug] [2024-11-07T06:41:01.617Z] Ignoring unsupported arg: projectId {"metadata":{"emulator":{"name":"database"},"message":"Ignoring unsupported arg: projectId"}}
+[debug] [2024-11-07T06:41:01.618Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"database"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2024-11-07T06:41:01.619Z] Ignoring unsupported arg: rules {"metadata":{"emulator":{"name":"database"},"message":"Ignoring unsupported arg: rules"}}
+[debug] [2024-11-07T06:41:01.620Z] Starting Database Emulator with command {"binary":"java","args":["-Duser.language=en","-jar","/home/ubuntu/.cache/firebase/emulators/firebase-database-emulator-v4.11.2.jar","--host","192.168.0.189","--port",9001,"--single_project_mode","Warning","--functions_emulator_host","192.168.0.189","--functions_emulator_port",5001],"optionalArgs":["port","host","functions_emulator_port","functions_emulator_host","single_project_mode"],"joinArgs":false,"shell":false,"port":9001} {"metadata":{"emulator":{"name":"database"},"message":"Starting Database Emulator with command {\"binary\":\"java\",\"args\":[\"-Duser.language=en\",\"-jar\",\"/home/ubuntu/.cache/firebase/emulators/firebase-database-emulator-v4.11.2.jar\",\"--host\",\"192.168.0.189\",\"--port\",9001,\"--single_project_mode\",\"Warning\",\"--functions_emulator_host\",\"192.168.0.189\",\"--functions_emulator_port\",5001],\"optionalArgs\":[\"port\",\"host\",\"functions_emulator_port\",\"functions_emulator_host\",\"single_project_mode\"],\"joinArgs\":false,\"shell\":false,\"port\":9001}"}}
+[info] i  database: Database Emulator logging to database-debug.log {"metadata":{"emulator":{"name":"database"},"message":"Database Emulator logging to \u001b[1mdatabase-debug.log\u001b[22m"}}
+[debug] [2024-11-07T06:41:04.992Z] WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by io.netty.util.internal.ReflectionUtil (file:/home/ubuntu/.cache/firebase/emulators/firebase-database-emulator-v4.11.2.jar) to field sun.nio.ch.SelectorImpl.selectedKeys
+WARNING: Please consider reporting this to the maintainers of io.netty.util.internal.ReflectionUtil
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release {"metadata":{"emulator":{"name":"database"},"message":"WARNING: An illegal reflective access operation has occurred\nWARNING: Illegal reflective access by io.netty.util.internal.ReflectionUtil (file:/home/ubuntu/.cache/firebase/emulators/firebase-database-emulator-v4.11.2.jar) to field sun.nio.ch.SelectorImpl.selectedKeys\nWARNING: Please consider reporting this to the maintainers of io.netty.util.internal.ReflectionUtil\nWARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations\nWARNING: All illegal access operations will be denied in a future release"}}
+[debug] [2024-11-07T06:41:04.993Z] 
+ {"metadata":{"emulator":{"name":"database"},"message":"\n"}}
+[debug] [2024-11-07T06:41:07.876Z] 01:41:07.868 [NamespaceSystem-akka.actor.default-dispatcher-4] INFO akka.event.slf4j.Slf4jLogger - Slf4jLogger started
+ {"metadata":{"emulator":{"name":"database"},"message":"01:41:07.868 [NamespaceSystem-akka.actor.default-dispatcher-4] INFO akka.event.slf4j.Slf4jLogger - Slf4jLogger started\n"}}
+[debug] [2024-11-07T06:41:08.735Z] 01:41:08.734 [main] INFO com.firebase.server.forge.App$ - Listening at 192.168.0.189:9001
+ {"metadata":{"emulator":{"name":"database"},"message":"01:41:08.734 [main] INFO com.firebase.server.forge.App$ - Listening at 192.168.0.189:9001\n"}}
+[debug] [2024-11-07T06:41:08.965Z] Checked if tokens are valid: true, expires at: 1730965255726
+[debug] [2024-11-07T06:41:08.965Z] Checked if tokens are valid: true, expires at: 1730965255726
+[debug] [2024-11-07T06:41:08.968Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/iot-sensor-f3c19/sites 
+[debug] [2024-11-07T06:41:10.140Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/iot-sensor-f3c19/sites 200
+[debug] [2024-11-07T06:41:10.141Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/iot-sensor-f3c19/sites {"sites":[{"name":"projects/iot-sensor-f3c19/sites/iot-sensor-f3c19","defaultUrl":"https://iot-sensor-f3c19.web.app","appId":"1:646283652547:web:a106c85fb1605a7f05a176","type":"DEFAULT_SITE"}]}
+[debug] [2024-11-07T06:41:10.142Z] Checked if tokens are valid: true, expires at: 1730965255726
+[debug] [2024-11-07T06:41:10.143Z] Checked if tokens are valid: true, expires at: 1730965255726
+[debug] [2024-11-07T06:41:10.143Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/iot-sensor-f3c19/webApps/1:646283652547:web:a106c85fb1605a7f05a176/config [none]
+[debug] [2024-11-07T06:41:11.688Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/iot-sensor-f3c19/webApps/1:646283652547:web:a106c85fb1605a7f05a176/config 200
+[debug] [2024-11-07T06:41:11.688Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/iot-sensor-f3c19/webApps/1:646283652547:web:a106c85fb1605a7f05a176/config {"projectId":"iot-sensor-f3c19","appId":"1:646283652547:web:a106c85fb1605a7f05a176","databaseURL":"https://iot-sensor-f3c19-default-rtdb.asia-southeast1.firebasedatabase.app","storageBucket":"iot-sensor-f3c19.firebasestorage.app","apiKey":"AIzaSyCGFwk8DwerP7GZdhh2HV0ABIjlSck-uGc","authDomain":"iot-sensor-f3c19.firebaseapp.com","messagingSenderId":"646283652547","measurementId":"G-HT2TLZH1KJ"}
+[debug] [2024-11-07T06:41:11.708Z] Checked if tokens are valid: true, expires at: 1730965255726
+[debug] [2024-11-07T06:41:11.709Z] Checked if tokens are valid: true, expires at: 1730965255726
+[debug] [2024-11-07T06:41:11.710Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/iot-sensor-f3c19 [none]
+[debug] [2024-11-07T06:41:12.124Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/iot-sensor-f3c19 200
+[debug] [2024-11-07T06:41:12.124Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/iot-sensor-f3c19 {"projectId":"iot-sensor-f3c19","projectNumber":"646283652547","displayName":"Iot-sensor","name":"projects/iot-sensor-f3c19","resources":{"hostingSite":"iot-sensor-f3c19","realtimeDatabaseInstance":"iot-sensor-f3c19-default-rtdb"},"state":"ACTIVE","etag":"1_8ff04a36-4976-40ae-89d9-cffb2be2a882"}
+[info] i  hosting[iot-sensor-f3c19]: Serving hosting files from: public {"metadata":{"emulator":{"name":"hosting"},"message":"Serving hosting files from: \u001b[1mpublic\u001b[22m"}}
+[info] ✔  hosting[iot-sensor-f3c19]: Local server: http://192.168.0.189:5000 {"metadata":{"emulator":{"name":"hosting"},"message":"Local server: \u001b[4m\u001b[1mhttp://192.168.0.189:5000\u001b[22m\u001b[24m"}}
+[debug] [2024-11-07T06:41:12.195Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2024-11-07T06:41:12.196Z] Ignoring unsupported arg: port {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: port"}}
+[debug] [2024-11-07T06:41:12.196Z] Starting Emulator UI with command {"binary":"node","args":["/home/ubuntu/.cache/firebase/emulators/ui-v1.13.0/server/server.mjs"],"optionalArgs":[],"joinArgs":false,"shell":false,"port":4000} {"metadata":{"emulator":{"name":"ui"},"message":"Starting Emulator UI with command {\"binary\":\"node\",\"args\":[\"/home/ubuntu/.cache/firebase/emulators/ui-v1.13.0/server/server.mjs\"],\"optionalArgs\":[],\"joinArgs\":false,\"shell\":false,\"port\":4000}"}}
+[info] i  ui: Emulator UI logging to ui-debug.log {"metadata":{"emulator":{"name":"ui"},"message":"Emulator UI logging to \u001b[1mui-debug.log\u001b[22m"}}
+[debug] [2024-11-07T06:41:12.596Z] Web / API server started at 192.168.0.189:4000
+ {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at 192.168.0.189:4000\n"}}
+[info] i  functions: Watching "/home/ubuntu/harpreet/sensorOct07/functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"/home/ubuntu/harpreet/sensorOct07/functions\" for Cloud Functions..."}}
+[debug] [2024-11-07T06:41:12.649Z] Validating nodejs source
+[warn] ⚠  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] ⚠  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2024-11-07T06:41:15.053Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^12.1.0",
+    "firebase-functions": "^5.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2024-11-07T06:41:15.054Z] Building nodejs source
+[debug] [2024-11-07T06:41:15.055Z] Failed to find version of module node: reached end of search path /home/ubuntu/harpreet/sensorOct07/functions/node_modules
+[info] ✔  functions: Using node@18 from host. 
+[debug] [2024-11-07T06:41:15.065Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-11-07T06:41:15.084Z] Found firebase-functions binary at '/home/ubuntu/harpreet/sensorOct07/functions/node_modules/.bin/firebase-functions'
+[info] Serving at port 8961
+
+[debug] [2024-11-07T06:41:16.855Z] Got response from /__/functions.yaml {"endpoints":{"helloWorld":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","labels":{},"httpsTrigger":{},"entryPoint":"helloWorld"}},"specVersion":"v1alpha1","requiredAPIs":[],"extensions":{}}
+[info] ✔  functions: Loaded functions definitions from source: helloWorld. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: helloWorld."}}
+[info] ✔  functions[us-central1-helloWorld]: http function initialized (http://192.168.0.189:5001/iot-sensor-f3c19/us-central1/helloWorld). {"metadata":{"emulator":{"name":"functions"},"message":"\u001b[1mhttp\u001b[22m function initialized (http://192.168.0.189:5001/iot-sensor-f3c19/us-central1/helloWorld)."}}
+[debug] [2024-11-07T06:41:16.950Z] >>> [apiv2][query] PUT http://192.168.0.189:9001/.settings/rules.json ns=iot-sensor-f3c19-default-rtdb
+[debug] [2024-11-07T06:41:16.950Z] >>> [apiv2][body] PUT http://192.168.0.189:9001/.settings/rules.json "{\n  \"rules\": {\n    \".read\": true,  // 2024-11-6\n    \".write\": true  // 2024-11-6\n  }\n}"
+[debug] [2024-11-07T06:41:18.142Z] 01:41:18.141 [NamespaceSystem-akka.actor.default-dispatcher-4] INFO com.firebase.core.namespace.NamespaceActor - iot-sensor-f3c19-default-rtdb successfully activated FBKV (SurveyIdle(0)) wait: 603ms, init: 0ms
+ {"metadata":{"emulator":{"name":"database"},"message":"01:41:18.141 [NamespaceSystem-akka.actor.default-dispatcher-4] INFO com.firebase.core.namespace.NamespaceActor - iot-sensor-f3c19-default-rtdb successfully activated FBKV (SurveyIdle(0)) wait: 603ms, init: 0ms\n"}}
+[debug] [2024-11-07T06:41:18.482Z] 01:41:18.481 [NamespaceSystem-blocking-namespace-operation-dispatcher-6] INFO com.firebase.core.namespace.StateManager - Namespace iot-sensor-f3c19-default-rtdb status Active to Active
+ {"metadata":{"emulator":{"name":"database"},"message":"01:41:18.481 [NamespaceSystem-blocking-namespace-operation-dispatcher-6] INFO com.firebase.core.namespace.StateManager - Namespace iot-sensor-f3c19-default-rtdb status Active to Active\n"}}
+[debug] [2024-11-07T06:41:18.631Z] <<< [apiv2][status] PUT http://192.168.0.189:9001/.settings/rules.json 200
+[debug] [2024-11-07T06:41:18.632Z] <<< [apiv2][body] PUT http://192.168.0.189:9001/.settings/rules.json {"status":"ok"}
+[debug] [2024-11-07T06:41:18.644Z] Could not find VSCode notification endpoint: FetchError: request to http://localhost:40001/vscode/notify failed, reason: connect ECONNREFUSED 127.0.0.1:40001
+[info] 
+┌─────────────────────────────────────────────────────────────┐
+│ ✔  All emulators ready! It is now safe to connect your app. │
+│ i  View Emulator UI at http://192.168.0.189:4000/           │
+└─────────────────────────────────────────────────────────────┘
+
+┌───────────┬────────────────────┬─────────────────────────────────────┐
+│ Emulator  │ Host:Port          │ View in Emulator UI                 │
+├───────────┼────────────────────┼─────────────────────────────────────┤
+│ Functions │ 192.168.0.189:5001 │ http://192.168.0.189:4000/functions │
+├───────────┼────────────────────┼─────────────────────────────────────┤
+│ Database  │ 192.168.0.189:9001 │ http://192.168.0.189:4000/database  │
+├───────────┼────────────────────┼─────────────────────────────────────┤
+│ Hosting   │ 192.168.0.189:5000 │ n/a                                 │
+└───────────┴────────────────────┴─────────────────────────────────────┘
+  Emulator Hub running at 127.0.0.1:4400
+  Other reserved ports: 4500
+
+Issues? Report them at https://github.com/firebase/firebase-tools/issues and attach the *-debug.log files.
+ 
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       [debug] [2024-11-08T05:59:37.962Z] ----------------------------------------------------------------------
+[debug] [2024-11-08T05:59:37.970Z] Command:       /home/ubuntu/.nvm/versions/node/v18.20.4/bin/node /home/ubuntu/.nvm/versions/node/v18.20.4/bin/firebase emulators:start
+[debug] [2024-11-08T05:59:37.971Z] CLI Version:   13.20.2
+[debug] [2024-11-08T05:59:37.972Z] Platform:      linux
+[debug] [2024-11-08T05:59:37.973Z] Node Version:  v18.20.4
+[debug] [2024-11-08T05:59:38.024Z] Time:          Fri Nov 08 2024 00:59:37 GMT-0500 (Eastern Standard Time)
+[debug] [2024-11-08T05:59:38.027Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-11-08T05:59:38.460Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-11-08T05:59:38.463Z] > authorizing via signed-in user (harpreetacclivis78@gmail.com)
+[debug] [2024-11-08T05:59:39.185Z] openjdk version "11.0.24" 2024-07-16
+[debug] [2024-11-08T05:59:39.189Z] 
+OpenJDK Runtime Environment (build 11.0.24+8-post-Ubuntu-1ubuntu320.04)
+OpenJDK 64-Bit Server VM (build 11.0.24+8-post-Ubuntu-1ubuntu320.04, mixed mode)
+
+[debug] [2024-11-08T05:59:39.199Z] Parsed Java major version: 11
+[info] i  emulators: Starting emulators: functions, database, hosting {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: functions, database, hosting"}}
+[debug] [2024-11-08T05:59:39.217Z] [logging] Logging Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2024-11-08T05:59:39.219Z] assigned listening specs for emulators {"user":{"ui":[{"address":"192.168.0.189","family":"IPv4","port":4000}],"database":[{"address":"192.168.0.189","family":"IPv4","port":9001}],"hosting":[{"address":"192.168.0.189","family":"IPv4","port":5000}],"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}]},"metadata":{"message":"assigned listening specs for emulators"}}
+[debug] [2024-11-08T05:59:39.239Z] [hub] writing locator at /tmp/hub-iot-sensor-f3c19.json
+[debug] [2024-11-08T05:59:39.257Z] [eventarc] Eventarc Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2024-11-08T05:59:39.258Z] [tasks] Cloud Tasks Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2024-11-08T05:59:39.259Z] late-assigned ports for functions and eventarc emulators {"user":{"ui":[{"address":"192.168.0.189","family":"IPv4","port":4000}],"database":[{"address":"192.168.0.189","family":"IPv4","port":9001}],"hosting":[{"address":"192.168.0.189","family":"IPv4","port":5000}],"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"functions":[{"address":"192.168.0.189","family":"IPv4","port":5001}],"eventarc":[{"address":"127.0.0.1","family":"IPv4","port":9299}],"tasks":[{"address":"127.0.0.1","family":"IPv4","port":9499}]},"metadata":{"message":"late-assigned ports for functions and eventarc emulators"}}
+[warn] ⚠  functions: The following emulators are not running, calls to these services from the Functions emulator will affect production: auth, firestore, pubsub, storage, dataconnect {"metadata":{"emulator":{"name":"functions"},"message":"The following emulators are not running, calls to these services from the Functions emulator will affect production: \u001b[1mauth, firestore, pubsub, storage, dataconnect\u001b[22m"}}
+[debug] [2024-11-08T05:59:39.271Z] defaultcredentials: writing to file /home/ubuntu/.config/firebase/harpreetacclivis78_gmail_com_application_default_credentials.json
+[debug] [2024-11-08T05:59:39.277Z] Setting GAC to /home/ubuntu/.config/firebase/harpreetacclivis78_gmail_com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to /home/ubuntu/.config/firebase/harpreetacclivis78_gmail_com_application_default_credentials.json"}}
+[debug] [2024-11-08T05:59:39.281Z] Checked if tokens are valid: false, expires at: 1730965255726
+[debug] [2024-11-08T05:59:39.282Z] Checked if tokens are valid: false, expires at: 1730965255726
+[debug] [2024-11-08T05:59:39.283Z] > refreshing access token with scopes: []
+[debug] [2024-11-08T05:59:39.288Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2024-11-08T05:59:39.289Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-11-08T05:59:39.516Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2024-11-08T05:59:39.517Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-11-08T05:59:39.547Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/iot-sensor-f3c19/adminSdkConfig [none]
+[debug] [2024-11-08T05:59:40.231Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/iot-sensor-f3c19/adminSdkConfig 200
+[debug] [2024-11-08T05:59:40.232Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/iot-sensor-f3c19/adminSdkConfig {"projectId":"iot-sensor-f3c19","databaseURL":"https://iot-sensor-f3c19-default-rtdb.asia-southeast1.firebasedatabase.app","storageBucket":"iot-sensor-f3c19.firebasestorage.app"}
+[debug] [2024-11-08T05:59:40.288Z] Checked if tokens are valid: true, expires at: 1731049178517
+[debug] [2024-11-08T05:59:40.288Z] Checked if tokens are valid: true, expires at: 1731049178517
+[debug] [2024-11-08T05:59:40.290Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/iot-sensor-f3c19 [none]
+[debug] [2024-11-08T05:59:40.717Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/iot-sensor-f3c19 200
+[debug] [2024-11-08T05:59:40.717Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/iot-sensor-f3c19 {"projectId":"iot-sensor-f3c19","projectNumber":"646283652547","displayName":"Iot-sensor","name":"projects/iot-sensor-f3c19","resources":{"hostingSite":"iot-sensor-f3c19","realtimeDatabaseInstance":"iot-sensor-f3c19-default-rtdb"},"state":"ACTIVE","etag":"1_8ff04a36-4976-40ae-89d9-cffb2be2a882"}
+[debug] [2024-11-08T05:59:40.718Z] database rules config:  [{"instance":"iot-sensor-f3c19-default-rtdb","rules":"/home/ubuntu/harpreet/sensorOct07/database.rules.json"}]
+[debug] [2024-11-08T05:59:40.744Z] Ignoring unsupported arg: projectId {"metadata":{"emulator":{"name":"database"},"message":"Ignoring unsupported arg: projectId"}}
+[debug] [2024-11-08T05:59:40.745Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"database"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2024-11-08T05:59:40.745Z] Ignoring unsupported arg: rules {"metadata":{"emulator":{"name":"database"},"message":"Ignoring unsupported arg: rules"}}
+[debug] [2024-11-08T05:59:40.745Z] Starting Database Emulator with command {"binary":"java","args":["-Duser.language=en","-jar","/home/ubuntu/.cache/firebase/emulators/firebase-database-emulator-v4.11.2.jar","--host","192.168.0.189","--port",9001,"--single_project_mode","Warning","--functions_emulator_host","192.168.0.189","--functions_emulator_port",5001],"optionalArgs":["port","host","functions_emulator_port","functions_emulator_host","single_project_mode"],"joinArgs":false,"shell":false,"port":9001} {"metadata":{"emulator":{"name":"database"},"message":"Starting Database Emulator with command {\"binary\":\"java\",\"args\":[\"-Duser.language=en\",\"-jar\",\"/home/ubuntu/.cache/firebase/emulators/firebase-database-emulator-v4.11.2.jar\",\"--host\",\"192.168.0.189\",\"--port\",9001,\"--single_project_mode\",\"Warning\",\"--functions_emulator_host\",\"192.168.0.189\",\"--functions_emulator_port\",5001],\"optionalArgs\":[\"port\",\"host\",\"functions_emulator_port\",\"functions_emulator_host\",\"single_project_mode\"],\"joinArgs\":false,\"shell\":false,\"port\":9001}"}}
+[info] i  database: Database Emulator logging to database-debug.log {"metadata":{"emulator":{"name":"database"},"message":"Database Emulator logging to \u001b[1mdatabase-debug.log\u001b[22m"}}
+[debug] [2024-11-08T05:59:43.748Z] WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by io.netty.util.internal.ReflectionUtil (file:/home/ubuntu/.cache/firebase/emulators/firebase-database-emulator-v4.11.2.jar) to field sun.nio.ch.SelectorImpl.selectedKeys
+WARNING: Please consider reporting this to the maintainers of io.netty.util.internal.ReflectionUtil
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+ {"metadata":{"emulator":{"name":"database"},"message":"WARNING: An illegal reflective access operation has occurred\nWARNING: Illegal reflective access by io.netty.util.internal.ReflectionUtil (file:/home/ubuntu/.cache/firebase/emulators/firebase-database-emulator-v4.11.2.jar) to field sun.nio.ch.SelectorImpl.selectedKeys\nWARNING: Please consider reporting this to the maintainers of io.netty.util.internal.ReflectionUtil\nWARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations\nWARNING: All illegal access operations will be denied in a future release\n"}}
+[debug] [2024-11-08T05:59:46.721Z] 00:59:46.710 [NamespaceSystem-akka.actor.default-dispatcher-4] INFO akka.event.slf4j.Slf4jLogger - Slf4jLogger started
+ {"metadata":{"emulator":{"name":"database"},"message":"00:59:46.710 [NamespaceSystem-akka.actor.default-dispatcher-4] INFO akka.event.slf4j.Slf4jLogger - Slf4jLogger started\n"}}
+[debug] [2024-11-08T05:59:47.569Z] 00:59:47.567 [main] INFO com.firebase.server.forge.App$ - Listening at 192.168.0.189:9001
+ {"metadata":{"emulator":{"name":"database"},"message":"00:59:47.567 [main] INFO com.firebase.server.forge.App$ - Listening at 192.168.0.189:9001\n"}}
+[debug] [2024-11-08T05:59:47.902Z] Checked if tokens are valid: true, expires at: 1731049178517
+[debug] [2024-11-08T05:59:47.903Z] Checked if tokens are valid: true, expires at: 1731049178517
+[debug] [2024-11-08T05:59:47.905Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/iot-sensor-f3c19/sites 
+[debug] [2024-11-08T05:59:49.130Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/iot-sensor-f3c19/sites 200
+[debug] [2024-11-08T05:59:49.131Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/iot-sensor-f3c19/sites {"sites":[{"name":"projects/iot-sensor-f3c19/sites/iot-sensor-f3c19","defaultUrl":"https://iot-sensor-f3c19.web.app","appId":"1:646283652547:web:a106c85fb1605a7f05a176","type":"DEFAULT_SITE"}]}
+[debug] [2024-11-08T05:59:49.132Z] Checked if tokens are valid: true, expires at: 1731049178517
+[debug] [2024-11-08T05:59:49.133Z] Checked if tokens are valid: true, expires at: 1731049178517
+[debug] [2024-11-08T05:59:49.133Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/iot-sensor-f3c19/webApps/1:646283652547:web:a106c85fb1605a7f05a176/config [none]
+[debug] [2024-11-08T05:59:50.342Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/iot-sensor-f3c19/webApps/1:646283652547:web:a106c85fb1605a7f05a176/config 200
+[debug] [2024-11-08T05:59:50.343Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/iot-sensor-f3c19/webApps/1:646283652547:web:a106c85fb1605a7f05a176/config {"projectId":"iot-sensor-f3c19","appId":"1:646283652547:web:a106c85fb1605a7f05a176","databaseURL":"https://iot-sensor-f3c19-default-rtdb.asia-southeast1.firebasedatabase.app","storageBucket":"iot-sensor-f3c19.firebasestorage.app","apiKey":"AIzaSyCGFwk8DwerP7GZdhh2HV0ABIjlSck-uGc","authDomain":"iot-sensor-f3c19.firebaseapp.com","messagingSenderId":"646283652547","measurementId":"G-HT2TLZH1KJ"}
+[debug] [2024-11-08T05:59:50.363Z] Checked if tokens are valid: true, expires at: 1731049178517
+[debug] [2024-11-08T05:59:50.364Z] Checked if tokens are valid: true, expires at: 1731049178517
+[debug] [2024-11-08T05:59:50.365Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/iot-sensor-f3c19 [none]
+[debug] [2024-11-08T05:59:50.760Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/iot-sensor-f3c19 200
+[debug] [2024-11-08T05:59:50.761Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/iot-sensor-f3c19 {"projectId":"iot-sensor-f3c19","projectNumber":"646283652547","displayName":"Iot-sensor","name":"projects/iot-sensor-f3c19","resources":{"hostingSite":"iot-sensor-f3c19","realtimeDatabaseInstance":"iot-sensor-f3c19-default-rtdb"},"state":"ACTIVE","etag":"1_8ff04a36-4976-40ae-89d9-cffb2be2a882"}
+[info] i  hosting[iot-sensor-f3c19]: Serving hosting files from: public {"metadata":{"emulator":{"name":"hosting"},"message":"Serving hosting files from: \u001b[1mpublic\u001b[22m"}}
+[info] ✔  hosting[iot-sensor-f3c19]: Local server: http://192.168.0.189:5000 {"metadata":{"emulator":{"name":"hosting"},"message":"Local server: \u001b[4m\u001b[1mhttp://192.168.0.189:5000\u001b[22m\u001b[24m"}}
+[debug] [2024-11-08T05:59:50.871Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2024-11-08T05:59:50.871Z] Ignoring unsupported arg: port {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: port"}}
+[debug] [2024-11-08T05:59:50.872Z] Starting Emulator UI with command {"binary":"node","args":["/home/ubuntu/.cache/firebase/emulators/ui-v1.13.0/server/server.mjs"],"optionalArgs":[],"joinArgs":false,"shell":false,"port":4000} {"metadata":{"emulator":{"name":"ui"},"message":"Starting Emulator UI with command {\"binary\":\"node\",\"args\":[\"/home/ubuntu/.cache/firebase/emulators/ui-v1.13.0/server/server.mjs\"],\"optionalArgs\":[],\"joinArgs\":false,\"shell\":false,\"port\":4000}"}}
+[info] i  ui: Emulator UI logging to ui-debug.log {"metadata":{"emulator":{"name":"ui"},"message":"Emulator UI logging to \u001b[1mui-debug.log\u001b[22m"}}
+[debug] [2024-11-08T05:59:51.280Z] Web / API server started at 192.168.0.189:4000
+ {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at 192.168.0.189:4000\n"}}
+[info] i  functions: Watching "/home/ubuntu/harpreet/sensorOct07/functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"/home/ubuntu/harpreet/sensorOct07/functions\" for Cloud Functions..."}}
+[debug] [2024-11-08T05:59:51.326Z] Validating nodejs source
+[warn] ⚠  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] ⚠  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2024-11-08T05:59:53.707Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^12.1.0",
+    "firebase-functions": "^5.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2024-11-08T05:59:53.708Z] Building nodejs source
+[debug] [2024-11-08T05:59:53.709Z] Failed to find version of module node: reached end of search path /home/ubuntu/harpreet/sensorOct07/functions/node_modules
+[info] ✔  functions: Using node@18 from host. 
+[debug] [2024-11-08T05:59:53.718Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-11-08T05:59:53.737Z] Found firebase-functions binary at '/home/ubuntu/harpreet/sensorOct07/functions/node_modules/.bin/firebase-functions'
+[info] Serving at port 8047
+
+[debug] [2024-11-08T05:59:55.411Z] Got response from /__/functions.yaml {"endpoints":{"helloWorld":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","labels":{},"httpsTrigger":{},"entryPoint":"helloWorld"}},"specVersion":"v1alpha1","requiredAPIs":[],"extensions":{}}
+[info] ✔  functions: Loaded functions definitions from source: helloWorld. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: helloWorld."}}
+[info] ✔  functions[us-central1-helloWorld]: http function initialized (http://192.168.0.189:5001/iot-sensor-f3c19/us-central1/helloWorld). {"metadata":{"emulator":{"name":"functions"},"message":"\u001b[1mhttp\u001b[22m function initialized (http://192.168.0.189:5001/iot-sensor-f3c19/us-central1/helloWorld)."}}
+[debug] [2024-11-08T05:59:55.502Z] >>> [apiv2][query] PUT http://192.168.0.189:9001/.settings/rules.json ns=iot-sensor-f3c19-default-rtdb
+[debug] [2024-11-08T05:59:55.502Z] >>> [apiv2][body] PUT http://192.168.0.189:9001/.settings/rules.json "{\n  \"rules\": {\n    \".read\": true,  // 2024-11-6\n    \".write\": true  // 2024-11-6\n  }\n}"
+[debug] [2024-11-08T05:59:56.832Z] 00:59:56.831 [NamespaceSystem-akka.actor.default-dispatcher-4] INFO com.firebase.core.namespace.NamespaceActor - iot-sensor-f3c19-default-rtdb successfully activated FBKV (SurveyIdle(0)) wait: 624ms, init: 0ms
+ {"metadata":{"emulator":{"name":"database"},"message":"00:59:56.831 [NamespaceSystem-akka.actor.default-dispatcher-4] INFO com.firebase.core.namespace.NamespaceActor - iot-sensor-f3c19-default-rtdb successfully activated FBKV (SurveyIdle(0)) wait: 624ms, init: 0ms\n"}}
+[debug] [2024-11-08T05:59:57.122Z] 00:59:57.121 [NamespaceSystem-blocking-namespace-operation-dispatcher-6] INFO com.firebase.core.namespace.StateManager - Namespace iot-sensor-f3c19-default-rtdb status Active to Active
+ {"metadata":{"emulator":{"name":"database"},"message":"00:59:57.121 [NamespaceSystem-blocking-namespace-operation-dispatcher-6] INFO com.firebase.core.namespace.StateManager - Namespace iot-sensor-f3c19-default-rtdb status Active to Active\n"}}
+[debug] [2024-11-08T05:59:57.465Z] <<< [apiv2][status] PUT http://192.168.0.189:9001/.settings/rules.json 200
+[debug] [2024-11-08T05:59:57.467Z] <<< [apiv2][body] PUT http://192.168.0.189:9001/.settings/rules.json {"status":"ok"}
+[debug] [2024-11-08T05:59:57.483Z] Could not find VSCode notification endpoint: FetchError: request to http://localhost:40001/vscode/notify failed, reason: connect ECONNREFUSED 127.0.0.1:40001
+[info] 
+┌─────────────────────────────────────────────────────────────┐
+│ ✔  All emulators ready! It is now safe to connect your app. │
+│ i  View Emulator UI at http://192.168.0.189:4000/           │
+└─────────────────────────────────────────────────────────────┘
+
+┌───────────┬────────────────────┬─────────────────────────────────────┐
+│ Emulator  │ Host:Port          │ View in Emulator UI                 │
+├───────────┼────────────────────┼─────────────────────────────────────┤
+│ Functions │ 192.168.0.189:5001 │ http://192.168.0.189:4000/functions │
+├───────────┼────────────────────┼─────────────────────────────────────┤
+│ Database  │ 192.168.0.189:9001 │ http://192.168.0.189:4000/database  │
+├───────────┼────────────────────┼─────────────────────────────────────┤
+│ Hosting   │ 192.168.0.189:5000 │ n/a                                 │
+└───────────┴────────────────────┴─────────────────────────────────────┘
+  Emulator Hub running at 127.0.0.1:4400
+  Other reserved ports: 4500
+
+Issues? Report them at https://github.com/firebase/firebase-tools/issues and attach the *-debug.log files.
+ 
+[debug] [2024-11-08T12:12:15.768Z] Received signal SIGHUP 1
+[info]  
+[info] i  emulators: Received SIGHUP for the first time. Starting a clean shutdown. 
+[info] i  emulators: Please wait for a clean shutdown or send the SIGHUP signal again to stop right now. 
+[debug] [2024-11-08T12:12:15.779Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at Socket._writeGeneric (node:net:962:11)
+    at Socket._write (node:net:974:8)
+    at writeOrBuffer (node:internal/streams/writable:392:12)
+    at _write (node:internal/streams/writable:333:10)
+    at Writable.write (node:internal/streams/writable:337:10)
+    at Console.log (/home/ubuntu/.nvm/versions/node/v18.20.4/lib/node_modules/firebase-tools/node_modules/winston/lib/winston/transports/console.js:87:23)
+    at Console._write (/home/ubuntu/.nvm/versions/node/v18.20.4/lib/node_modules/firebase-tools/node_modules/winston-transport/modern.js:103:17)
+    at writeOrBuffer (/home/ubuntu/.nvm/versions/node/v18.20.4/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/internal/streams/writable.js:334:12)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2024-11-08T12:12:15.783Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at Socket._writeGeneric (node:net:962:11)
+    at Socket._write (node:net:974:8)
+    at writeOrBuffer (node:internal/streams/writable:392:12)
+    at _write (node:internal/streams/writable:333:10)
+    at Writable.write (node:internal/streams/writable:337:10)
+    at Console.log (/home/ubuntu/.nvm/versions/node/v18.20.4/lib/node_modules/firebase-tools/node_modules/winston/lib/winston/transports/console.js:87:23)
+    at Console._write (/home/ubuntu/.nvm/versions/node/v18.20.4/lib/node_modules/firebase-tools/node_modules/winston-transport/modern.js:103:17)
+    at writeOrBuffer (/home/ubuntu/.nvm/versions/node/v18.20.4/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/internal/streams/writable.js:334:12)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2024-11-08T12:12:15.787Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at Socket._writeGeneric (node:net:962:11)
+    at Socket._write (node:net:974:8)
+    at writeOrBuffer (node:internal/streams/writable:392:12)
+    at _write (node:internal/streams/writable:333:10)
+    at Writable.write (node:internal/streams/writable:337:10)
+    at Console.log (/home/ubuntu/.nvm/versions/node/v18.20.4/lib/node_modules/firebase-tools/node_modules/winston/lib/winston/transports/console.js:87:23)
+    at Console._write (/home/ubuntu/.nvm/versions/node/v18.20.4/lib/node_modules/firebase-tools/node_modules/winston-transport/modern.js:103:17)
+    at writeOrBuffer (/home/ubuntu/.nvm/versions/node/v18.20.4/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/internal/streams/writable.js:334:12)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2024-11-08T12:12:15.790Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at Socket._writeGeneric (node:net:962:11)
+    at Socket._write (node:net:974:8)
+    at writeOrBuffer (node:internal/streams/writable:392:12)
+    at _write (node:internal/streams/writable:333:10)
+    at Writable.write (node:internal/streams/writable:337:10)
+    at Console.log (/home/ubuntu/.nvm/versions/node/v18.20.4/lib/node_modules/firebase-tools/node_modules/winston/lib/winston/transports/console.js:87:23)
+    at Console._write (/home/ubuntu/.nvm/versions/node/v18.20.4/lib/node_modules/firebase-tools/node_modules/winston-transport/modern.js:103:17)
+    at writeOrBuffer (/home/ubuntu/.nvm/versions/node/v18.20.4/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/internal/streams/writable.js:334:12)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2024-11-08T12:12:15.793Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at Socket._writeGeneric (node:net:962:11)
+    at Socket._write (node:net:974:8)
+    at writeOrBuffer (node:internal/streams/writable:392:12)
+    at _write (node:internal/streams/writable:333:10)
+    at Writable.write (node:internal/streams/writable:337:10)
+    at Console.log (/home/ubuntu/.nvm/versions/node/v18.20.4/lib/node_modules/firebase-tools/node_modules/winston/lib/winston/transports/console.js:87:23)
+    at Console._write (/home/ubuntu/.nvm/versions/node/v18.20.4/lib/node_modules/firebase-tools/node_modules/winston-transport/modern.js:103:17)
+    at writeOrBuffer (/home/ubuntu/.nvm/versions/node/v18.20.4/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/internal/streams/writable.js:334:12)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2024-11-08T12:12:15.796Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at Socket._writeGeneric (node:net:962:11)
+    at Socket._write (node:net:974:8)
+    at writeOrBuffer (node:internal/streams/writable:392:12)
+    at _write (node:internal/streams/writable:333:10)
+    at Writable.write (node:internal/streams/writable:337:10)
+    at Console.log (/home/ubuntu/.nvm/versions/node/v18.20.4/lib/node_modules/firebase-tools/node_modules/winston/lib/winston/transports/console.js:87:23)
+    at Console._write (/home/ubuntu/.nvm/versions/node/v18.20.4/lib/node_modules/firebase-tools/node_modules/winston-transport/modern.js:103:17)
+    at writeOrBuffer (/home/ubuntu/.nvm/versions/node/v18.20.4/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/internal/streams/writable.js:334:12)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2024-11-08T12:12:15.798Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at Socket._writeGeneric (node:net:962:11)
+    at Socket._write (node:net:974:8)
+    at writeOrBuffer (node:internal/streams/writable:392:12)
+    at _write (node:internal/streams/writable:333:10)
+    at Writable.write (node:internal/streams/writable:337:10)
+    at Console.log (/home/ubuntu/.nvm/versions/node/v18.20.4/lib/node_modules/firebase-tools/node_modules/winston/lib/winston/transports/console.js:87:23)
+    at Console._write (/home/ubuntu/.nvm/versions/node/v18.20.4/lib/node_modules/firebase-tools/node_modules/winston-transport/modern.js:103:17)
+    at writeOrBuffer (/home/ubuntu/.nvm/versions/node/v18.20.4/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/internal/streams/writable.js:334:12)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2024-11-08T12:12:15.800Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at Socket._writeGeneric (node:net:962:11)
+    at Socket._write (node:net:974:8)
+    at writeOrBuffer (node:internal/streams/writable:392:12)
+    at _write (node:internal/streams/writable:333:10)
+    at Writable.write (node:internal/streams/writable:337:10)
+    at Console.log (/home/ubuntu/.nvm/versions/node/v18.20.4/lib/node_modules/firebase-tools/node_modules/winston/lib/winston/transports/console.js:87:23)
+    at Console._write (/home/ubuntu/.nvm/versions/node/v18.20.4/lib/node_modules/firebase-tools/node_modules/winston-transport/modern.js:103:17)
+    at writeOrBuffer (/home/ubuntu/.nvm/versions/node/v18.20.4/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/internal/streams/writable.js:334:12)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2024-11-08T12:12:15.805Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at Socket._writeGeneric (node:net:962:11)
+    at Socket._write (node:net:974:8)
+    at writeOrBuffer (node:internal/streams/writable:392:12)
+    at _write (node:internal/streams/writable:333:10)
+    at Writable.write (node:internal/streams/writable:337:10)
+    at Console.log (/home/ubuntu/.nvm/versions/node/v18.20.4/lib/node_modules/firebase-tools/node_modules/winston/lib/winston/transports/console.js:87:23)
+    at Console._write (/home/ubuntu/.nvm/versions/node/v18.20.4/lib/node_modules/firebase-tools/node_modules/winston-transport/modern.js:103:17)
+    at writeOrBuffer (/home/ubuntu/.nvm/versions/node/v18.20.4/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/internal/streams/writable.js:334:12)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2024-11-08T12:12:15.808Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at Socket._writeGeneric (node:net:962:11)
+    at Socket._write (node:net:974:8)
+    at writeOrBuffer (node:internal/streams/writable:392:12)
+    at _write (node:internal/streams/writable:333:10)
+    at Writable.write (node:internal/streams/writable:337:10)
+    at Console.log (/home/ubuntu/.nvm/versions/node/v18.20.4/lib/node_modules/firebase-tools/node_modules/winston/lib/winston/transports/console.js:87:23)
+    at Console._write (/home/ubuntu/.nvm/versions/node/v18.20.4/lib/node_modules/firebase-tools/node_modules/winston-transport/modern.js:103:17)
+    at writeOrBuffer (/home/ubuntu/.nvm/versions/node/v18.20.4/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/internal/streams/writable.js:334:12)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2024-11-08T12:12:15.810Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at Socket._writeGeneric (node:net:962:11)
+    at Socket._write (node:net:974:8)
+    at writeOrBuffer (node:internal/streams/writable:392:12)
+    at _write (node:internal/streams/writable:333:10)
+    at Writable.write (node:internal/streams/writable:337:10)
+    at Console.log (/home/ubuntu/.nvm/versions/node/v18.20.4/lib/node_modules/firebase-tools/node_modules/winston/lib/winston/transports/console.js:87:23)
+    at Console._write (/home/ubuntu/.nvm/versions/node/v18.20.4/lib/node_modules/firebase-tools/node_modules/winston-transport/modern.js:103:17)
+    at writeOrBuffer (/home/ubuntu/.nvm/versions/node/v18.20.4/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/internal/streams/writable.js:334:12)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2024-11-08T12:12:15.812Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at Socket._writeGeneric (node:net:962:11)
+    at Socket._write (node:net:974:8)
+    at writeOrBuffer (node:internal/streams/writable:392:12)
+    at _write (node:internal/streams/writable:333:10)
+    at Writable.write (node:internal/streams/writable:337:10)
+    at Console.log (/home/ubuntu/.nvm/versions/node/v18.20.4/lib/node_modules/firebase-tools/node_modules/winston/lib/winston/transports/console.js:87:23)
+    at Console._write (/home/ubuntu/.nvm/versions/node/v18.20.4/lib/node_modules/firebase-tools/node_modules/winston-transport/modern.js:103:17)
+    at writeOrBuffer (/home/ubuntu/.nvm/versions/node/v18.20.4/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/internal/streams/writable.js:334:12)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2024-11-08T12:12:15.814Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at Socket._writeGeneric (node:net:962:11)
+    at Socket._write (node:net:974:8)
+    at writeOrBuffer (node:internal/streams/writable:392:12)
+    at _write (node:internal/streams/writable:333:10)
+    at Writable.write (node:internal/streams/writable:337:10)
+    at Console.log (/home/ubuntu/.nvm/versions/node/v18.20.4/lib/node_modules/firebase-tools/node_modules/winston/lib/winston/transports/console.js:87:23)
+    at Console._write (/home/ubuntu/.nvm/versions/node/v18.20.4/lib/node_modules/firebase-tools/node_modules/winston-transport/modern.js:103:17)
+    at writeOrBuffer (/home/ubuntu/.nvm/versions/node/v18.20.4/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/internal/streams/writable.js:334:12)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2024-11-08T12:12:15.816Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at Socket._writeGeneric (node:net:962:11)
+    at Socket._write (node:net:974:8)
+    at writeOrBuffer (node:internal/streams/writable:392:12)
+    at _write (node:internal/streams/writable:333:10)
+    at Writable.write (node:internal/streams/writable:337:10)
+    at Console.log (/home/ubuntu/.nvm/versions/node/v18.20.4/lib/node_modules/firebase-tools/node_modules/winston/lib/winston/transports/console.js:87:23)
+    at Console._write (/home/ubuntu/.nvm/versions/node/v18.20.4/lib/node_modules/firebase-tools/node_modules/winston-transport/modern.js:103:17)
+    at writeOrBuffer (/home/ubuntu/.nvm/versions/node/v18.20.4/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/internal/streams/writable.js:334:12)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2024-11-08T12:12:15.818Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at Socket._writeGeneric (node:net:962:11)
+    at Socket._write (node:net:974:8)
+    at writeOrBuffer (node:internal/streams/writable:392:12)
+    at _write (node:internal/streams/writable:333:10)
+    at Writable.write (node:internal/streams/writable:337:10)
+    at Console.log (/home/ubuntu/.nvm/versions/node/v18.20.4/lib/node_modules/firebase-tools/node_modules/winston/lib/winston/transports/console.js:87:23)
+    at Console._write (/home/ubuntu/.nvm/versions/node/v18.20.4/lib/node_modules/firebase-tools/node_modules/winston-transport/modern.js:103:17)
+    at writeOrBuffer (/home/ubuntu/.nvm/versions/node/v18.20.4/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/internal/streams/writable.js:334:12)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2024-11-08T12:12:15.820Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at Socket._writeGeneric (node:net:962:11)
+    at Socket._write (node:net:974:8)
+    at writeOrBuffer (node:internal/streams/writable:392:12)
+    at _write (node:internal/streams/writable:333:10)
+    at Writable.write (node:internal/streams/writable:337:10)
+    at Console.log (/home/ubuntu/.nvm/versions/node/v18.20.4/lib/node_modules/firebase-tools/node_modules/winston/lib/winston/transports/console.js:87:23)
+    at Console._write (/home/ubuntu/.nvm/versions/node/v18.20.4/lib/node_modules/firebase-tools/node_modules/winston-transport/modern.js:103:17)
+    at writeOrBuffer (/home/ubuntu/.nvm/versions/node/v18.20.4/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/internal/streams/writable.js:334:12)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2024-11-08T12:12:15.823Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at Socket._writeGeneric (node:net:962:11)
+    at Socket._write (node:net:974:8)
+    at writeOrBuffer (node:internal/streams/writable:392:12)
+    at _write (node:internal/streams/writable:333:10)
+    at Writable.write (node:internal/streams/writable:337:10)
+    at Console.log (/home/ubuntu/.nvm/versions/node/v18.20.4/lib/node_modules/firebase-tools/node_modules/winston/lib/winston/transports/console.js:87:23)
+    at Console._write (/home/ubuntu/.nvm/versions/node/v18.20.4/lib/node_modules/firebase-tools/node_modules/winston-transport/modern.js:103:17)
+    at writeOrBuffer (/home/ubuntu/.nvm/versions/node/v18.20.4/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/internal/streams/writable.js:334:12)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2024-11-08T12:12:15.825Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at Socket._writeGeneric (node:net:962:11)
+    at Socket._write (node:net:974:8)
+    at writeOrBuffer (node:internal/streams/writable:392:12)
+    at _write (node:internal/streams/writable:333:10)
+    at Writable.write (node:internal/streams/writable:337:10)
+    at Console.log (/home/ubuntu/.nvm/versions/node/v18.20.4/lib/node_modules/firebase-tools/node_modules/winston/lib/winston/transports/console.js:87:23)
+    at Console._write (/home/ubuntu/.nvm/versions/node/v18.20.4/lib/node_modules/firebase-tools/node_modules/winston-transport/modern.js:103:17)
+    at writeOrBuffer (/home/ubuntu/.nvm/versions/node/v18.20.4/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/internal/streams/writable.js:334:12)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2024-11-08T12:12:15.828Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at Socket._writeGeneric (node:net:962:11)
+    at Socket._write (node:net:974:8)
+    at writeOrBuffer (node:internal/streams/writable:392:12)
+    at _write (node:internal/streams/writable:333:10)
+    at Writable.write (node:internal/streams/writable:337:10)
+    at Console.log (/home/ubuntu/.nvm/versions/node/v18.20.4/lib/node_modules/firebase-tools/node_modules/winston/lib/winston/transports/console.js:87:23)
+    at Console._write (/home/ubuntu/.nvm/versions/node/v18.20.4/lib/node_modules/firebase-tools/node_modules/winston-transport/modern.js:103:17)
+    at writeOrBuffer (/home/ubuntu/.nvm/versions/node/v18.20.4/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/internal/streams/writable.js:334:12)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2024-11-08T12:12:15.830Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at Socket._writeGeneric (node:net:962:11)
+    at Socket._write (node:net:974:8)
+    at writeOrBuffer (node:internal/streams/writable:392:12)
+    at _write (node:internal/streams/writable:333:10)
+    at Writable.write (node:internal/streams/writable:337:10)
+    at Console.log (/home/ubuntu/.nvm/versions/node/v18.20.4/lib/node_modules/firebase-tools/node_modules/winston/lib/winston/transports/console.js:87:23)
+    at Console._write (/home/ubuntu/.nvm/versions/node/v18.20.4/lib/node_modules/firebase-tools/node_modules/winston-transport/modern.js:103:17)
+    at writeOrBuffer (/home/ubuntu/.nvm/versions/node/v18.20.4/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/internal/streams/writable.js:334:12)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2024-11-08T12:12:15.831Z] Ignoring signal SIGHUP due to short delay of 63ms
+[debug] [2024-11-08T12:12:15.832Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at Socket._writeGeneric (node:net:962:11)
+    at Socket._write (node:net:974:8)
+    at writeOrBuffer (node:internal/streams/writable:392:12)
+    at _write (node:internal/streams/writable:333:10)
+    at Writable.write (node:internal/streams/writable:337:10)
+    at Console.log (/home/ubuntu/.nvm/versions/node/v18.20.4/lib/node_modules/firebase-tools/node_modules/winston/lib/winston/transports/console.js:87:23)
+    at Console._write (/home/ubuntu/.nvm/versions/node/v18.20.4/lib/node_modules/firebase-tools/node_modules/winston-transport/modern.js:103:17)
+    at writeOrBuffer (/home/ubuntu/.nvm/versions/node/v18.20.4/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/internal/streams/writable.js:334:12)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2024-11-08T12:12:15.834Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at Socket._writeGeneric (node:net:962:11)
+    at Socket._write (node:net:974:8)
+    at writeOrBuffer (node:internal/streams/writable:392:12)
+    at _write (node:internal/streams/writable:333:10)
+    at Writable.write (node:internal/streams/writable:337:10)
+    at Console.log (/home/ubuntu/.nvm/versions/node/v18.20.4/lib/node_modules/firebase-tools/node_modules/winston/lib/winston/transports/console.js:87:23)
+    at Console._write (/home/ubuntu/.nvm/versions/node/v18.20.4/lib/node_modules/firebase-tools/node_modules/winston-transport/modern.js:103:17)
+    at writeOrBuffer (/home/ubuntu/.nvm/versions/node/v18.20.4/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/internal/streams/writable.js:334:12)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2024-11-08T12:12:15.836Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at Socket._writeGeneric (node:net:962:11)
+    at Socket._write (node:net:974:8)
+    at writeOrBuffer (node:internal/streams/writable:392:12)
+    at _write (node:internal/streams/writable:333:10)
+    at Writable.write (node:internal/streams/writable:337:10)
+    at Console.log (/home/ubuntu/.nvm/versions/node/v18.20.4/lib/node_modules/firebase-tools/node_modules/winston/lib/winston/transports/console.js:87:23)
+    at Console._write (/home/ubuntu/.nvm/versions/node/v18.20.4/lib/node_modules/firebase-tools/node_modules/winston-transport/modern.js:103:17)
+    at writeOrBuffer (/home/ubuntu/.nvm/versions/node/v18.20.4/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/internal/streams/writable.js:334:12)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2024-11-08T12:12:15.838Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at Socket._writeGeneric (node:net:962:11)
+    at Socket._write (node:net:974:8)
+    at writeOrBuffer (node:internal/streams/writable:392:12)
+    at _write (node:internal/streams/writable:333:10)
+    at Writable.write (node:internal/streams/writable:337:10)
+    at Console.log (/home/ubuntu/.nvm/versions/node/v18.20.4/lib/node_modules/firebase-tools/node_modules/winston/lib/winston/transports/console.js:87:23)
+    at Console._write (/home/ubuntu/.nvm/versions/node/v18.20.4/lib/node_modules/firebase-tools/node_modules/winston-transport/modern.js:103:17)
+    at writeOrBuffer (/home/ubuntu/.nvm/versions/node/v18.20.4/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/internal/streams/writable.js:334:12)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2024-11-08T12:12:15.840Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at Socket._writeGeneric (node:net:962:11)
+    at Socket._write (node:net:974:8)
+    at writeOrBuffer (node:internal/streams/writable:392:12)
+    at _write (node:internal/streams/writable:333:10)
+    at Writable.write (node:internal/streams/writable:337:10)
+    at Console.log (/home/ubuntu/.nvm/versions/node/v18.20.4/lib/node_modules/firebase-tools/node_modules/winston/lib/winston/transports/console.js:87:23)
+    at Console._write (/home/ubuntu/.nvm/versions/node/v18.20.4/lib/node_modules/firebase-tools/node_modules/winston-transport/modern.js:103:17)
+    at writeOrBuffer (/home/ubuntu/.nvm/versions/node/v18.20.4/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/internal/streams/writable.js:334:12)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2024-11-08T12:12:15.841Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at Socket._writeGeneric (node:net:962:11)
+    at Socket._write (node:net:974:8)
+    at writeOrBuffer (node:internal/streams/writable:392:12)
+    at _write (node:internal/streams/writable:333:10)
+    at Writable.write (node:internal/streams/writable:337:10)
+    at Console.log (/home/ubuntu/.nvm/versions/node/v18.20.4/lib/node_modules/firebase-tools/node_modules/winston/lib/winston/transports/console.js:87:23)
+    at Console._write (/home/ubuntu/.nvm/versions/node/v18.20.4/lib/node_modules/firebase-tools/node_modules/winston-transport/modern.js:103:17)
+    at writeOrBuffer (/home/ubuntu/.nvm/versions/node/v18.20.4/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/internal/streams/writable.js:334:12)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2024-11-08T12:12:15.843Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at Socket._writeGeneric (node:net:962:11)
+    at Socket._write (node:net:974:8)
+    at writeOrBuffer (node:internal/streams/writable:392:12)
+    at _write (node:internal/streams/writable:333:10)
+    at Writable.write (node:internal/streams/writable:337:10)
+    at Console.log (/home/ubuntu/.nvm/versions/node/v18.20.4/lib/node_modules/firebase-tools/node_modules/winston/lib/winston/transports/console.js:87:23)
+    at Console._write (/home/ubuntu/.nvm/versions/node/v18.20.4/lib/node_modules/firebase-tools/node_modules/winston-transport/modern.js:103:17)
+    at writeOrBuffer (/home/ubuntu/.nvm/versions/node/v18.20.4/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/internal/streams/writable.js:334:12)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2024-11-08T12:12:15.845Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at Socket._writeGeneric (node:net:962:11)
+    at Socket._write (node:net:974:8)
+    at writeOrBuffer (node:internal/streams/writable:392:12)
+    at _write (node:internal/streams/writable:333:10)
+    at Writable.write (node:internal/streams/writable:337:10)
+    at Console.log (/home/ubuntu/.nvm/versions/node/v18.20.4/lib/node_modules/firebase-tools/node_modules/winston/lib/winston/transports/console.js:87:23)
+    at Console._write (/home/ubuntu/.nvm/versions/node/v18.20.4/lib/node_modules/firebase-tools/node_modules/winston-transport/modern.js:103:17)
+    at writeOrBuffer (/home/ubuntu/.nvm/versions/node/v18.20.4/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/internal/streams/writable.js:334:12)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2024-11-08T12:12:15.849Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at Socket._writeGeneric (node:net:962:11)
+    at Socket._write (node:net:974:8)
+    at writeOrBuffer (node:internal/streams/writable:392:12)
+    at _write (node:internal/streams/writable:333:10)
+    at Writable.write (node:internal/streams/writable:337:10)
+    at Console.log (/home/ubuntu/.nvm/versions/node/v18.20.4/lib/node_modules/firebase-tools/node_modules/winston/lib/winston/transports/console.js:87:23)
+    at Console._write (/home/ubuntu/.nvm/versions/node/v18.20.4/lib/node_modules/firebase-tools/node_modules/winston-transport/modern.js:103:17)
+    at writeOrBuffer (/home/ubuntu/.nvm/versions/node/v18.20.4/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/internal/streams/writable.js:334:12)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2024-11-08T12:12:15.852Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at Socket._writeGeneric (node:net:962:11)
+    at Socket._write (node:net:974:8)
+    at writeOrBuffer (node:internal/streams/writable:392:12)
+    at _write (node:internal/streams/writable:333:10)
+    at Writable.write (node:internal/streams/writable:337:10)
+    at Console.log (/home/ubuntu/.nvm/versions/node/v18.20.4/lib/node_modules/firebase-tools/node_modules/winston/lib/winston/transports/console.js:87:23)
+    at Console._write (/home/ubuntu/.nvm/versions/node/v18.20.4/lib/node_modules/firebase-tools/node_modules/winston-transport/modern.js:103:17)
+    at writeOrBuffer (/home/ubuntu/.nvm/versions/node/v18.20.4/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/internal/streams/writable.js:334:12)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2024-11-08T12:12:15.854Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at Socket._writeGeneric (node:net:962:11)
+    at Socket._write (node:net:974:8)
+    at writeOrBuffer (node:internal/streams/writable:392:12)
+    at _write (node:internal/streams/writable:333:10)
+    at Writable.write (node:internal/streams/writable:337:10)
+    at Console.log (/home/ubuntu/.nvm/versions/node/v18.20.4/lib/node_modules/firebase-tools/node_modules/winston/lib/winston/transports/console.js:87:23)
+    at Console._write (/home/ubuntu/.nvm/versions/node/v18.20.4/lib/node_modules/firebase-tools/node_modules/winston-transport/modern.js:103:17)
+    at writeOrBuffer (/home/ubuntu/.nvm/versions/node/v18.20.4/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/internal/streams/writable.js:334:12)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2024-11-08T12:12:15.856Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at Socket._writeGeneric (node:net:962:11)
+    at Socket._write (node:net:974:8)
+    at writeOrBuffer (node:internal/streams/writable:392:12)
+    at _write (node:internal/streams/writable:333:10)
+    at Writable.write (node:internal/streams/writable:337:10)
+    at Console.log (/home/ubuntu/.nvm/versions/node/v18.20.4/lib/node_modules/firebase-tools/node_modules/winston/lib/winston/transports/console.js:87:23)
+    at Console._write (/home/ubuntu/.nvm/versions/node/v18.20.4/lib/node_modules/firebase-tools/node_modules/winston-transport/modern.js:103:17)
+    at writeOrBuffer (/home/ubuntu/.nvm/versions/node/v18.20.4/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/internal/streams/writable.js:334:12)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2024-11-08T12:12:15.858Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at Socket._writeGeneric (node:net:962:11)
+    at Socket._write (node:net:974:8)
+    at writeOrBuffer (node:internal/streams/writable:392:12)
+    at _write (node:internal/streams/writable:333:10)
+    at Writable.write (node:internal/streams/writable:337:10)
+    at Console.log (/home/ubuntu/.nvm/versions/node/v18.20.4/lib/node_modules/firebase-tools/node_modules/winston/lib/winston/transports/console.js:87:23)
+    at Console._write (/home/ubuntu/.nvm/versions/node/v18.20.4/lib/node_modules/firebase-tools/node_modules/winston-transport/modern.js:103:17)
+    at writeOrBuffer (/home/ubuntu/.nvm/versions/node/v18.20.4/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/internal/streams/writable.js:334:12)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2024-11-08T12:12:15.860Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at Socket._writeGeneric (node:net:962:11)
+    at Socket._write (node:net:974:8)
+    at writeOrBuffer (node:internal/streams/writable:392:12)
+    at _write (node:internal/streams/writable:333:10)
+    at Writable.write (node:internal/streams/writable:337:10)
+    at Console.log (/home/ubuntu/.nvm/versions/node/v18.20.4/lib/node_modules/firebase-tools/node_modules/winston/lib/winston/transports/console.js:87:23)
+    at Console._write (/home/ubuntu/.nvm/versions/node/v18.20.4/lib/node_modules/firebase-tools/node_modules/winston-transport/modern.js:103:17)
+    at writeOrBuffer (/home/ubuntu/.nvm/versions/node/v18.20.4/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/internal/streams/writable.js:334:12)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2024-11-08T12:12:15.862Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at Socket._writeGeneric (node:net:962:11)
+    at Socket._write (node:net:974:8)
+    at writeOrBuffer (node:internal/streams/writable:392:12)
+    at _write (node:internal/streams/writable:333:10)
+    at Writable.write (node:internal/streams/writable:337:10)
+    at Console.log (/home/ubuntu/.nvm/versions/node/v18.20.4/lib/node_modules/firebase-tools/node_modules/winston/lib/winston/transports/console.js:87:23)
+    at Console._write (/home/ubuntu/.nvm/versions/node/v18.20.4/lib/node_modules/firebase-tools/node_modules/winston-transport/modern.js:103:17)
+    at writeOrBuffer (/home/ubuntu/.nvm/versions/node/v18.20.4/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/internal/streams/writable.js:334:12)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2024-11-08T12:12:15.863Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at Socket._writeGeneric (node:net:962:11)
+    at Socket._write (node:net:974:8)
+    at writeOrBuffer (node:internal/streams/writable:392:12)
+    at _write (node:internal/streams/writable:333:10)
+    at Writable.write (node:internal/streams/writable:337:10)
+    at Console.log (/home/ubuntu/.nvm/versions/node/v18.20.4/lib/node_modules/firebase-tools/node_modules/winston/lib/winston/transports/console.js:87:23)
+    at Console._write (/home/ubuntu/.nvm/versions/node/v18.20.4/lib/node_modules/firebase-tools/node_modules/winston-transport/modern.js:103:17)
+    at writeOrBuffer (/home/ubuntu/.nvm/versions/node/v18.20.4/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/internal/streams/writable.js:334:12)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2024-11-08T12:12:15.865Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at Socket._writeGeneric (node:net:962:11)
+    at Socket._write (node:net:974:8)
+    at writeOrBuffer (node:internal/streams/writable:392:12)
+    at _write (node:internal/streams/writable:333:10)
+    at Writable.write (node:internal/streams/writable:337:10)
+    at Console.log (/home/ubuntu/.nvm/versions/node/v18.20.4/lib/node_modules/firebase-tools/node_modules/winston/lib/winston/transports/console.js:87:23)
+    at Console._write (/home/ubuntu/.nvm/versions/node/v18.20.4/lib/node_modules/firebase-tools/node_modules/winston-transport/modern.js:103:17)
+    at writeOrBuffer (/home/ubuntu/.nvm/versions/node/v18.20.4/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/internal/streams/writable.js:334:12)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2024-11-08T12:12:15.867Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at Socket._writeGeneric (node:net:962:11)
+    at Socket._write (node:net:974:8)
+    at writeOrBuffer (node:internal/streams/writable:392:12)
+    at _write (node:internal/streams/writable:333:10)
+    at Writable.write (node:internal/streams/writable:337:10)
+    at Console.log (/home/ubuntu/.nvm/versions/node/v18.20.4/lib/node_modules/firebase-tools/node_modules/winston/lib/winston/transports/console.js:87:23)
+    at Console._write (/home/ubuntu/.nvm/versions/node/v18.20.4/lib/node_modules/firebase-tools/node_modules/winston-transport/modern.js:103:17)
+    at writeOrBuffer (/home/ubuntu/.nvm/versions/node/v18.20.4/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/internal/streams/writable.js:334:12)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2024-11-08T12:12:15.868Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at Socket._writeGeneric (node:net:962:11)
+    at Socket._write (node:net:974:8)
+    at writeOrBuffer (node:internal/streams/writable:392:12)
+    at _write (node:internal/streams/writable:333:10)
+    at Writable.write (node:internal/streams/writable:337:10)
+    at Console.log (/home/ubuntu/.nvm/versions/node/v18.20.4/lib/node_modules/firebase-tools/node_modules/winston/lib/winston/transports/console.js:87:23)
+    at Console._write (/home/ubuntu/.nvm/versions/node/v18.20.4/lib/node_modules/firebase-tools/node_modules/winston-transport/modern.js:103:17)
+    at writeOrBuffer (/home/ubuntu/.nvm/versions/node/v18.20.4/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/internal/streams/writable.js:334:12)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2024-11-08T12:12:15.870Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at Socket._writeGeneric (node:net:962:11)
+    at Socket._write (node:net:974:8)
+    at writeOrBuffer (node:internal/streams/writable:392:12)
+    at _write (node:internal/streams/writable:333:10)
+    at Writable.write (node:internal/streams/writable:337:10)
+    at Console.log (/home/ubuntu/.nvm/versions/node/v18.20.4/lib/node_modules/firebase-tools/node_modules/winston/lib/winston/transports/console.js:87:23)
+    at Console._write (/home/ubuntu/.nvm/versions/node/v18.20.4/lib/node_modules/firebase-tools/node_modules/winston-transport/modern.js:103:17)
+    at writeOrBuffer (/home/ubuntu/.nvm/versions/node/v18.20.4/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/internal/streams/writable.js:334:12)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2024-11-08T12:12:15.872Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at Socket._writeGeneric (node:net:962:11)
+    at Socket._write (node:net:974:8)
+    at writeOrBuffer (node:internal/streams/writable:392:12)
+    at _write (node:internal/streams/writable:333:10)
+    at Writable.write (node:internal/streams/writable:337:10)
+    at Console.log (/home/ubuntu/.nvm/versions/node/v18.20.4/lib/node_modules/firebase-tools/node_modules/winston/lib/winston/transports/console.js:87:23)
+    at Console._write (/home/ubuntu/.nvm/versions/node/v18.20.4/lib/node_modules/firebase-tools/node_modules/winston-transport/modern.js:103:17)
+    at writeOrBuffer (/home/ubuntu/.nvm/versions/node/v18.20.4/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/internal/streams/writable.js:334:12)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2024-11-08T12:12:15.873Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at Socket._writeGeneric (node:net:962:11)
+    at Socket._write (node:net:974:8)
+    at writeOrBuffer (node:internal/streams/writable:392:12)
+    at _write (node:internal/streams/writable:333:10)
+    at Writable.write (node:internal/streams/writable:337:10)
+    at Console.log (/home/ubuntu/.nvm/versions/node/v18.20.4/lib/node_modules/firebase-tools/node_modules/winston/lib/winston/transports/console.js:87:23)
+    at Console._write (/home/ubuntu/.nvm/versions/node/v18.20.4/lib/node_modules/firebase-tools/node_modules/winston-transport/modern.js:103:17)
+    at writeOrBuffer (/home/ubuntu/.nvm/versions/node/v18.20.4/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/internal/streams/writable.js:334:12)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2024-11-08T12:12:15.875Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at Socket._writeGeneric (node:net:962:11)
+    at Socket._write (node:net:974:8)
+    at writeOrBuffer (node:internal/streams/writable:392:12)
+    at _write (node:internal/streams/writable:333:10)
+    at Writable.write (node:internal/streams/writable:337:10)
+    at Console.log (/home/ubuntu/.nvm/versions/node/v18.20.4/lib/node_modules/firebase-tools/node_modules/winston/lib/winston/transports/console.js:87:23)
+    at Console._write (/home/ubuntu/.nvm/versions/node/v18.20.4/lib/node_modules/firebase-tools/node_modules/winston-transport/modern.js:103:17)
+    at writeOrBuffer (/home/ubuntu/.nvm/versions/node/v18.20.4/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/internal/streams/writable.js:334:12)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2024-11-08T12:12:15.876Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at Socket._writeGeneric (node:net:962:11)
+    at Socket._write (node:net:974:8)
+    at writeOrBuffer (node:internal/streams/writable:392:12)
+    at _write (node:internal/streams/writable:333:10)
+    at Writable.write (node:internal/streams/writable:337:10)
+    at Console.log (/home/ubuntu/.nvm/versions/node/v18.20.4/lib/node_modules/firebase-tools/node_modules/winston/lib/winston/transports/console.js:87:23)
+    at Console._write (/home/ubuntu/.nvm/versions/node/v18.20.4/lib/node_modules/firebase-tools/node_modules/winston-transport/modern.js:103:17)
+    at writeOrBuffer (/home/ubuntu/.nvm/versions/node/v18.20.4/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/internal/streams/writable.js:334:12)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2024-11-08T12:12:15.878Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at Socket._writeGeneric (node:net:962:11)
+    at Socket._write (node:net:974:8)
+    at writeOrBuffer (node:internal/streams/writable:392:12)
+    at _write (node:internal/streams/writable:333:10)
+    at Writable.write (node:internal/streams/writable:337:10)
+    at Console.log (/home/ubuntu/.nvm/versions/node/v18.20.4/lib/node_modules/firebase-tools/node_modules/winston/lib/winston/transports/console.js:87:23)
+    at Console._write (/home/ubuntu/.nvm/versions/node/v18.20.4/lib/node_modules/firebase-tools/node_modules/winston-transport/modern.js:103:17)
+    at writeOrBuffer (/home/ubuntu/.nvm/versions/node/v18.20.4/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/internal/streams/writable.js:334:12)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2024-11-08T12:12:15.880Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at Socket._writeGeneric (node:net:962:11)
+    at Socket._write (node:net:974:8)
+    at writeOrBuffer (node:internal/streams/writable:392:12)
+    at _write (node:internal/streams/writable:333:10)
+    at Writable.write (node:internal/streams/writable:337:10)
+    at Console.log (/home/ubuntu/.nvm/versions/node/v18.20.4/lib/node_modules/firebase-tools/node_modules/winston/lib/winston/transports/console.js:87:23)
+    at Console._write (/home/ubuntu/.nvm/versions/node/v18.20.4/lib/node_modules/firebase-tools/node_modules/winston-transport/modern.js:103:17)
+    at writeOrBuffer (/home/ubuntu/.nvm/versions/node/v18.20.4/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/internal/streams/writable.js:334:12)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2024-11-08T12:12:15.882Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at Socket._writeGeneric (node:net:962:11)
+    at Socket._write (node:net:974:8)
+    at writeOrBuffer (node:internal/streams/writable:392:12)
+    at _write (node:internal/streams/writable:333:10)
+    at Writable.write (node:internal/streams/writable:337:10)
+    at Console.log (/home/ubuntu/.nvm/versions/node/v18.20.4/lib/node_modules/firebase-tools/node_modules/winston/lib/winston/transports/console.js:87:23)
+    at Console._write (/home/ubuntu/.nvm/versions/node/v18.20.4/lib/node_modules/firebase-tools/node_modules/winston-transport/modern.js:103:17)
+    at writeOrBuffer (/home/ubuntu/.nvm/versions/node/v18.20.4/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/internal/streams/writable.js:334:12)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2024-11-08T12:12:15.883Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at Socket._writeGeneric (node:net:962:11)
+    at Socket._write (node:net:974:8)
+    at writeOrBuffer (node:internal/streams/writable:392:12)
+    at _write (node:internal/streams/writable:333:10)
+    at Writable.write (node:internal/streams/writable:337:10)
+    at Console.log (/home/ubuntu/.nvm/versions/node/v18.20.4/lib/node_modules/firebase-tools/node_modules/winston/lib/winston/transports/console.js:87:23)
+    at Console._write (/home/ubuntu/.nvm/versions/node/v18.20.4/lib/node_modules/firebase-tools/node_modules/winston-transport/modern.js:103:17)
+    at writeOrBuffer (/home/ubuntu/.nvm/versions/node/v18.20.4/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/internal/streams/writable.js:334:12)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2024-11-08T12:12:15.885Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at Socket._writeGeneric (node:net:962:11)
+    at Socket._write (node:net:974:8)
+    at writeOrBuffer (node:internal/streams/writable:392:12)
+    at _write (node:internal/streams/writable:333:10)
+    at Writable.write (node:internal/streams/writable:337:10)
+    at Console.log (/home/ubuntu/.nvm/versions/node/v18.20.4/lib/node_modules/firebase-tools/node_modules/winston/lib/winston/transports/console.js:87:23)
+    at Console._write (/home/ubuntu/.nvm/versions/node/v18.20.4/lib/node_modules/firebase-tools/node_modules/winston-transport/modern.js:103:17)
+    at writeOrBuffer (/home/ubuntu/.nvm/versions/node/v18.20.4/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/internal/streams/writable.js:334:12)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2024-11-08T12:12:15.889Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at Socket._writeGeneric (node:net:962:11)
+    at Socket._write (node:net:974:8)
+    at writeOrBuffer (node:internal/streams/writable:392:12)
+    at _write (node:internal/streams/writable:333:10)
+    at Writable.write (node:internal/streams/writable:337:10)
+    at Console.log (/home/ubuntu/.nvm/versions/node/v18.20.4/lib/node_modules/firebase-tools/node_modules/winston/lib/winston/transports/console.js:87:23)
+    at Console._write (/home/ubuntu/.nvm/versions/node/v18.20.4/lib/node_modules/firebase-tools/node_modules/winston-transport/modern.js:103:17)
+    at writeOrBuffer (/home/ubuntu/.nvm/versions/node/v18.20.4/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/internal/streams/writable.js:334:12)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2024-11-08T12:12:15.891Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at Socket._writeGeneric (node:net:962:11)
+    at Socket._write (node:net:974:8)
+    at writeOrBuffer (node:internal/streams/writable:392:12)
+    at _write (node:internal/streams/writable:333:10)
+    at Writable.write (node:internal/streams/writable:337:10)
+    at Console.log (/home/ubuntu/.nvm/versions/node/v18.20.4/lib/node_modules/firebase-tools/node_modules/winston/lib/winston/transports/console.js:87:23)
+    at Console._write (/home/ubuntu/.nvm/versions/node/v18.20.4/lib/node_modules/firebase-tools/node_modules/winston-transport/modern.js:103:17)
+    at writeOrBuffer (/home/ubuntu/.nvm/versions/node/v18.20.4/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/internal/streams/writable.js:334:12)
+[error] 
+[debug] [2024-11-08T12:52:12.954Z] ----------------------------------------------------------------------
+[debug] [2024-11-08T12:52:12.961Z] Command:       /home/ubuntu/.nvm/versions/node/v18.20.4/bin/node /home/ubuntu/.nvm/versions/node/v18.20.4/bin/firebase emulators:start
+[debug] [2024-11-08T12:52:12.963Z] CLI Version:   13.20.2
+[debug] [2024-11-08T12:52:12.964Z] Platform:      linux
+[debug] [2024-11-08T12:52:12.964Z] Node Version:  v18.20.4
+[debug] [2024-11-08T12:52:13.017Z] Time:          Fri Nov 08 2024 07:52:12 GMT-0500 (Eastern Standard Time)
+[debug] [2024-11-08T12:52:13.018Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-11-08T12:52:13.032Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2024-11-08T12:52:13.426Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-11-08T12:52:13.427Z] > authorizing via signed-in user (harpreetacclivis78@gmail.com)
+[debug] [2024-11-08T12:52:13.634Z] openjdk version "11.0.24" 2024-07-16
+[debug] [2024-11-08T12:52:13.636Z] 
+OpenJDK Runtime Environment (build 11.0.24+8-post-Ubuntu-1ubuntu320.04)
+OpenJDK 64-Bit Server VM (build 11.0.24+8-post-Ubuntu-1ubuntu320.04, mixed mode)
+
+[debug] [2024-11-08T12:52:13.647Z] Parsed Java major version: 11
+[info] i  emulators: Starting emulators: functions, database, hosting {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: functions, database, hosting"}}
+[debug] [2024-11-08T12:52:13.664Z] [logging] Logging Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2024-11-08T12:52:13.665Z] assigned listening specs for emulators {"user":{"ui":[{"address":"192.168.0.189","family":"IPv4","port":4000}],"database":[{"address":"192.168.0.189","family":"IPv4","port":9001}],"hosting":[{"address":"192.168.0.189","family":"IPv4","port":5000}],"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}]},"metadata":{"message":"assigned listening specs for emulators"}}
+[debug] [2024-11-08T12:52:13.682Z] [hub] writing locator at /tmp/hub-iot-sensor-f3c19.json
+[debug] [2024-11-08T12:52:13.699Z] [eventarc] Eventarc Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2024-11-08T12:52:13.700Z] [tasks] Cloud Tasks Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2024-11-08T12:52:13.701Z] late-assigned ports for functions and eventarc emulators {"user":{"ui":[{"address":"192.168.0.189","family":"IPv4","port":4000}],"database":[{"address":"192.168.0.189","family":"IPv4","port":9001}],"hosting":[{"address":"192.168.0.189","family":"IPv4","port":5000}],"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"functions":[{"address":"192.168.0.189","family":"IPv4","port":5001}],"eventarc":[{"address":"127.0.0.1","family":"IPv4","port":9299}],"tasks":[{"address":"127.0.0.1","family":"IPv4","port":9499}]},"metadata":{"message":"late-assigned ports for functions and eventarc emulators"}}
+[warn] ⚠  functions: The following emulators are not running, calls to these services from the Functions emulator will affect production: auth, firestore, pubsub, storage, dataconnect {"metadata":{"emulator":{"name":"functions"},"message":"The following emulators are not running, calls to these services from the Functions emulator will affect production: \u001b[1mauth, firestore, pubsub, storage, dataconnect\u001b[22m"}}
+[debug] [2024-11-08T12:52:13.710Z] defaultcredentials: writing to file /home/ubuntu/.config/firebase/harpreetacclivis78_gmail_com_application_default_credentials.json
+[debug] [2024-11-08T12:52:13.715Z] Setting GAC to /home/ubuntu/.config/firebase/harpreetacclivis78_gmail_com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to /home/ubuntu/.config/firebase/harpreetacclivis78_gmail_com_application_default_credentials.json"}}
+[debug] [2024-11-08T12:52:13.717Z] Checked if tokens are valid: false, expires at: 1731049178517
+[debug] [2024-11-08T12:52:13.719Z] Checked if tokens are valid: false, expires at: 1731049178517
+[debug] [2024-11-08T12:52:13.720Z] > refreshing access token with scopes: []
+[debug] [2024-11-08T12:52:13.722Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2024-11-08T12:52:13.723Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-11-08T12:52:23.145Z] *** [apiv2] error from fetch(https://firebase-public.firebaseio.com/cli.json, {"headers":{},"method":"GET"}): FetchError: request to https://firebase-public.firebaseio.com/cli.json failed, reason: getaddrinfo EAI_AGAIN firebase-public.firebaseio.com
+[warn] ⚠  Unable to fetch the CLI MOTD and remote config. This is not a fatal error, but may indicate an issue with your network connection. 
+[debug] [2024-11-08T12:52:23.147Z] Failed to fetch MOTD FirebaseError: Failed to make request to https://firebase-public.firebaseio.com/cli.json
+[debug] [2024-11-08T12:52:43.165Z] *** [apiv2] error from fetch(https://www.googleapis.com/oauth2/v3/token, {"headers":{},"method":"POST","body":{"_overheadLength":545,"_valueLength":212,"_valuesToMeasure":[],"writable":false,"readable":true,"dataSize":0,"maxDataSize":2097152,"pauseStreams":true,"_released":true,"_streams":[],"_currentStream":null,"_insideLoop":false,"_pendingNext":false,"_boundary":"--------------------------473486001175625144061672","_events":{},"_eventsCount":1}}): FetchError: request to https://www.googleapis.com/oauth2/v3/token failed, reason: getaddrinfo EAI_AGAIN www.googleapis.com
+[debug] [2024-11-08T12:52:43.167Z] Failed to get Admin SDK config for iot-sensor-f3c19, falling back to cache Failed to get Admin SDK for Firebase project iot-sensor-f3c19. Please make sure the project exists and your account has permission to access it. {"name":"FirebaseError","children":[],"exit":2,"message":"Failed to get Admin SDK for Firebase project iot-sensor-f3c19. Please make sure the project exists and your account has permission to access it.","original":{"name":"FirebaseError","children":[],"exit":1,"message":"Authentication Error: Your credentials are no longer valid. Please run \u001b[1mfirebase login --reauth\u001b[22m\n\nFor CI servers and headless environments, generate a new token with \u001b[1mfirebase login:ci\u001b[22m","status":500},"status":500}
+[debug] [2024-11-08T12:52:43.211Z] Checked if tokens are valid: false, expires at: 1731049178517
+[debug] [2024-11-08T12:52:43.211Z] Checked if tokens are valid: false, expires at: 1731049178517
+[debug] [2024-11-08T12:52:43.212Z] > refreshing access token with scopes: []
+[debug] [2024-11-08T12:52:43.213Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2024-11-08T12:52:43.213Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-11-08T12:53:01.912Z] *** [apiv2] error from fetch(https://www.googleapis.com/oauth2/v3/token, {"headers":{},"method":"POST","body":{"_overheadLength":545,"_valueLength":212,"_valuesToMeasure":[],"writable":false,"readable":true,"dataSize":0,"maxDataSize":2097152,"pauseStreams":true,"_released":true,"_streams":[],"_currentStream":null,"_insideLoop":false,"_pendingNext":false,"_boundary":"--------------------------201220663185158555177216","_events":{},"_eventsCount":1}}): FetchError: request to https://www.googleapis.com/oauth2/v3/token failed, reason: getaddrinfo EAI_AGAIN www.googleapis.com
+[debug] [2024-11-08T12:53:01.915Z] Authentication Error: Your credentials are no longer valid. Please run firebase login --reauth
+
+For CI servers and headless environments, generate a new token with firebase login:ci
+[debug] [2024-11-08T12:53:01.917Z] Failed to retrieve default database instance: {"name":"FirebaseError","children":[],"exit":2,"message":"Failed to get Firebase project iot-sensor-f3c19. Please make sure the project exists and your account has permission to access it.","original":{"name":"FirebaseError","children":[],"exit":1,"message":"Authentication Error: Your credentials are no longer valid. Please run \u001b[1mfirebase login --reauth\u001b[22m\n\nFor CI servers and headless environments, generate a new token with \u001b[1mfirebase login:ci\u001b[22m","status":500},"status":500} {"metadata":{"emulator":{"name":"database"},"message":"Failed to retrieve default database instance: {\"name\":\"FirebaseError\",\"children\":[],\"exit\":2,\"message\":\"Failed to get Firebase project iot-sensor-f3c19. Please make sure the project exists and your account has permission to access it.\",\"original\":{\"name\":\"FirebaseError\",\"children\":[],\"exit\":1,\"message\":\"Authentication Error: Your credentials are no longer valid. Please run \\u001b[1mfirebase login --reauth\\u001b[22m\\n\\nFor CI servers and headless environments, generate a new token with \\u001b[1mfirebase login:ci\\u001b[22m\",\"status\":500},\"status\":500}"}}
+[debug] [2024-11-08T12:53:01.920Z] database rules config:  [{"instance":"iot-sensor-f3c19-default-rtdb","rules":"/home/ubuntu/harpreet/sensorOct07/database.rules.json"}]
+[debug] [2024-11-08T12:53:01.949Z] Ignoring unsupported arg: projectId {"metadata":{"emulator":{"name":"database"},"message":"Ignoring unsupported arg: projectId"}}
+[debug] [2024-11-08T12:53:01.950Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"database"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2024-11-08T12:53:01.951Z] Ignoring unsupported arg: rules {"metadata":{"emulator":{"name":"database"},"message":"Ignoring unsupported arg: rules"}}
+[debug] [2024-11-08T12:53:01.951Z] Starting Database Emulator with command {"binary":"java","args":["-Duser.language=en","-jar","/home/ubuntu/.cache/firebase/emulators/firebase-database-emulator-v4.11.2.jar","--host","192.168.0.189","--port",9001,"--single_project_mode","Warning","--functions_emulator_host","192.168.0.189","--functions_emulator_port",5001],"optionalArgs":["port","host","functions_emulator_port","functions_emulator_host","single_project_mode"],"joinArgs":false,"shell":false,"port":9001} {"metadata":{"emulator":{"name":"database"},"message":"Starting Database Emulator with command {\"binary\":\"java\",\"args\":[\"-Duser.language=en\",\"-jar\",\"/home/ubuntu/.cache/firebase/emulators/firebase-database-emulator-v4.11.2.jar\",\"--host\",\"192.168.0.189\",\"--port\",9001,\"--single_project_mode\",\"Warning\",\"--functions_emulator_host\",\"192.168.0.189\",\"--functions_emulator_port\",5001],\"optionalArgs\":[\"port\",\"host\",\"functions_emulator_port\",\"functions_emulator_host\",\"single_project_mode\"],\"joinArgs\":false,\"shell\":false,\"port\":9001}"}}
+[info] i  database: Database Emulator logging to database-debug.log {"metadata":{"emulator":{"name":"database"},"message":"Database Emulator logging to \u001b[1mdatabase-debug.log\u001b[22m"}}
+[debug] [2024-11-08T12:53:04.777Z] WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by io.netty.util.internal.ReflectionUtil (file:/home/ubuntu/.cache/firebase/emulators/firebase-database-emulator-v4.11.2.jar) to field sun.nio.ch.SelectorImpl.selectedKeys
+WARNING: Please consider reporting this to the maintainers of io.netty.util.internal.ReflectionUtil
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release {"metadata":{"emulator":{"name":"database"},"message":"WARNING: An illegal reflective access operation has occurred\nWARNING: Illegal reflective access by io.netty.util.internal.ReflectionUtil (file:/home/ubuntu/.cache/firebase/emulators/firebase-database-emulator-v4.11.2.jar) to field sun.nio.ch.SelectorImpl.selectedKeys\nWARNING: Please consider reporting this to the maintainers of io.netty.util.internal.ReflectionUtil\nWARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations\nWARNING: All illegal access operations will be denied in a future release"}}
+[debug] [2024-11-08T12:53:04.779Z] 
+ {"metadata":{"emulator":{"name":"database"},"message":"\n"}}
+[debug] [2024-11-08T12:53:07.727Z] 07:53:07.718 [NamespaceSystem-akka.actor.default-dispatcher-4] INFO akka.event.slf4j.Slf4jLogger - Slf4jLogger started
+ {"metadata":{"emulator":{"name":"database"},"message":"07:53:07.718 [NamespaceSystem-akka.actor.default-dispatcher-4] INFO akka.event.slf4j.Slf4jLogger - Slf4jLogger started\n"}}
+[debug] [2024-11-08T12:53:08.564Z] 07:53:08.563 [main] INFO com.firebase.server.forge.App$ - Listening at 192.168.0.189:9001
+ {"metadata":{"emulator":{"name":"database"},"message":"07:53:08.563 [main] INFO com.firebase.server.forge.App$ - Listening at 192.168.0.189:9001\n"}}
+[debug] [2024-11-08T12:53:08.890Z] Checked if tokens are valid: false, expires at: 1731049178517
+[debug] [2024-11-08T12:53:08.891Z] Checked if tokens are valid: false, expires at: 1731049178517
+[debug] [2024-11-08T12:53:08.891Z] > refreshing access token with scopes: []
+[debug] [2024-11-08T12:53:08.893Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2024-11-08T12:53:08.894Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-11-08T12:53:21.952Z] *** [apiv2] error from fetch(https://www.googleapis.com/oauth2/v3/token, {"headers":{},"method":"POST","body":{"_overheadLength":545,"_valueLength":212,"_valuesToMeasure":[],"writable":false,"readable":true,"dataSize":0,"maxDataSize":2097152,"pauseStreams":true,"_released":true,"_streams":[],"_currentStream":null,"_insideLoop":false,"_pendingNext":false,"_boundary":"--------------------------125605391675923142157808","_events":{},"_eventsCount":1}}): FetchError: request to https://www.googleapis.com/oauth2/v3/token failed, reason: getaddrinfo EAI_AGAIN www.googleapis.com
+[debug] [2024-11-08T12:53:21.955Z] Failed to list hosting sites
+[debug] Authentication Error: Your credentials are no longer valid. Please run firebase login --reauth
+
+For CI servers and headless environments, generate a new token with firebase login:ci
+[debug] [2024-11-08T12:53:21.957Z] Checked if tokens are valid: false, expires at: 1731049178517
+[debug] [2024-11-08T12:53:21.957Z] Checked if tokens are valid: false, expires at: 1731049178517
+[debug] [2024-11-08T12:53:21.957Z] > refreshing access token with scopes: []
+[debug] [2024-11-08T12:53:21.958Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2024-11-08T12:53:21.958Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-11-08T12:53:31.974Z] *** [apiv2] error from fetch(https://www.googleapis.com/oauth2/v3/token, {"headers":{},"method":"POST","body":{"_overheadLength":545,"_valueLength":212,"_valuesToMeasure":[],"writable":false,"readable":true,"dataSize":0,"maxDataSize":2097152,"pauseStreams":true,"_released":true,"_streams":[],"_currentStream":null,"_insideLoop":false,"_pendingNext":false,"_boundary":"--------------------------180760176464322262103122","_events":{},"_eventsCount":1}}): FetchError: request to https://www.googleapis.com/oauth2/v3/token failed, reason: getaddrinfo EAI_AGAIN www.googleapis.com
+[debug] [2024-11-08T12:53:31.975Z] fetchWebSetup error: FirebaseError: Authentication Error: Your credentials are no longer valid. Please run firebase login --reauth
+
+For CI servers and headless environments, generate a new token with firebase login:ci
+[warn] ⚠  hosting: Using web app configuration from cache. 
+[debug] [2024-11-08T12:53:31.980Z] Checked if tokens are valid: false, expires at: 1731049178517
+[debug] [2024-11-08T12:53:31.981Z] Checked if tokens are valid: false, expires at: 1731049178517
+[debug] [2024-11-08T12:53:31.981Z] > refreshing access token with scopes: []
+[debug] [2024-11-08T12:53:31.982Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2024-11-08T12:53:31.983Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-11-08T12:53:42.009Z] *** [apiv2] error from fetch(https://www.googleapis.com/oauth2/v3/token, {"headers":{},"method":"POST","body":{"_overheadLength":545,"_valueLength":212,"_valuesToMeasure":[],"writable":false,"readable":true,"dataSize":0,"maxDataSize":2097152,"pauseStreams":true,"_released":true,"_streams":[],"_currentStream":null,"_insideLoop":false,"_pendingNext":false,"_boundary":"--------------------------132469614797491749103976","_events":{},"_eventsCount":1}}): FetchError: request to https://www.googleapis.com/oauth2/v3/token failed, reason: getaddrinfo EAI_AGAIN www.googleapis.com
+[debug] [2024-11-08T12:53:42.010Z] Authentication Error: Your credentials are no longer valid. Please run firebase login --reauth
+
+For CI servers and headless environments, generate a new token with firebase login:ci
+[info] i  hosting[iot-sensor-f3c19]: Serving hosting files from: public {"metadata":{"emulator":{"name":"hosting"},"message":"Serving hosting files from: \u001b[1mpublic\u001b[22m"}}
+[info] ✔  hosting[iot-sensor-f3c19]: Local server: http://192.168.0.189:5000 {"metadata":{"emulator":{"name":"hosting"},"message":"Local server: \u001b[4m\u001b[1mhttp://192.168.0.189:5000\u001b[22m\u001b[24m"}}
+[debug] [2024-11-08T12:53:42.097Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2024-11-08T12:53:42.098Z] Ignoring unsupported arg: port {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: port"}}
+[debug] [2024-11-08T12:53:42.099Z] Starting Emulator UI with command {"binary":"node","args":["/home/ubuntu/.cache/firebase/emulators/ui-v1.13.0/server/server.mjs"],"optionalArgs":[],"joinArgs":false,"shell":false,"port":4000} {"metadata":{"emulator":{"name":"ui"},"message":"Starting Emulator UI with command {\"binary\":\"node\",\"args\":[\"/home/ubuntu/.cache/firebase/emulators/ui-v1.13.0/server/server.mjs\"],\"optionalArgs\":[],\"joinArgs\":false,\"shell\":false,\"port\":4000}"}}
+[info] i  ui: Emulator UI logging to ui-debug.log {"metadata":{"emulator":{"name":"ui"},"message":"Emulator UI logging to \u001b[1mui-debug.log\u001b[22m"}}
+[debug] [2024-11-08T12:53:42.530Z] Web / API server started at 192.168.0.189:4000
+ {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at 192.168.0.189:4000\n"}}
+[info] i  functions: Watching "/home/ubuntu/harpreet/sensorOct07/functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"/home/ubuntu/harpreet/sensorOct07/functions\" for Cloud Functions..."}}
+[debug] [2024-11-08T12:53:42.755Z] Validating nodejs source
+[debug] [2024-11-08T12:53:53.058Z] checkFunctionsSDKVersion was unable to fetch information from NPM Error: spawnSync npm ETIMEDOUT
+    at Object.spawnSync (node:internal/child_process:1117:20)
+    at Object.spawnSync (node:child_process:876:24)
+    at Function.spawnSync [as sync] (/home/ubuntu/.nvm/versions/node/v18.20.4/lib/node_modules/firebase-tools/node_modules/cross-spawn/index.js:26:23)
+    at Object.getLatestSDKVersion (/home/ubuntu/.nvm/versions/node/v18.20.4/lib/node_modules/firebase-tools/lib/deploy/functions/runtimes/node/versioning.js:54:25)
+    at Object.checkFunctionsSDKVersion (/home/ubuntu/.nvm/versions/node/v18.20.4/lib/node_modules/firebase-tools/lib/deploy/functions/runtimes/node/versioning.js:74:32)
+    at Delegate.validate (/home/ubuntu/.nvm/versions/node/v18.20.4/lib/node_modules/firebase-tools/lib/deploy/functions/runtimes/node/index.js:86:20)
+    at FunctionsEmulator.discoverTriggers (/home/ubuntu/.nvm/versions/node/v18.20.4/lib/node_modules/firebase-tools/lib/emulator/functionsEmulator.js:303:35)
+    at async FunctionsEmulator.loadTriggers (/home/ubuntu/.nvm/versions/node/v18.20.4/lib/node_modules/firebase-tools/lib/emulator/functionsEmulator.js:339:34)
+    at async FunctionsEmulator.connect (/home/ubuntu/.nvm/versions/node/v18.20.4/lib/node_modules/firebase-tools/lib/emulator/functionsEmulator.js:269:13)
+    at async Object.startAll (/home/ubuntu/.nvm/versions/node/v18.20.4/lib/node_modules/firebase-tools/lib/emulator/controller.js:626:13)
+[debug] [2024-11-08T12:53:53.060Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^12.1.0",
+    "firebase-functions": "^5.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2024-11-08T12:53:53.061Z] Building nodejs source
+[debug] [2024-11-08T12:53:53.062Z] Failed to find version of module node: reached end of search path /home/ubuntu/harpreet/sensorOct07/functions/node_modules
+[info] ✔  functions: Using node@18 from host. 
+[debug] [2024-11-08T12:53:53.073Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-11-08T12:53:53.094Z] Found firebase-functions binary at '/home/ubuntu/harpreet/sensorOct07/functions/node_modules/.bin/firebase-functions'
+[info] Serving at port 8415
+
+[debug] [2024-11-08T12:53:54.812Z] Got response from /__/functions.yaml {"endpoints":{"helloWorld":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","labels":{},"httpsTrigger":{},"entryPoint":"helloWorld"}},"specVersion":"v1alpha1","requiredAPIs":[],"extensions":{}}
+[info] ✔  functions: Loaded functions definitions from source: helloWorld. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: helloWorld."}}
+[info] ✔  functions[us-central1-helloWorld]: http function initialized (http://192.168.0.189:5001/iot-sensor-f3c19/us-central1/helloWorld). {"metadata":{"emulator":{"name":"functions"},"message":"\u001b[1mhttp\u001b[22m function initialized (http://192.168.0.189:5001/iot-sensor-f3c19/us-central1/helloWorld)."}}
+[debug] [2024-11-08T12:53:54.904Z] >>> [apiv2][query] PUT http://192.168.0.189:9001/.settings/rules.json ns=iot-sensor-f3c19-default-rtdb
+[debug] [2024-11-08T12:53:54.904Z] >>> [apiv2][body] PUT http://192.168.0.189:9001/.settings/rules.json "{\n  \"rules\": {\n    \".read\": true,  // 2024-11-6\n    \".write\": true  // 2024-11-6\n  }\n}"
+[debug] [2024-11-08T12:53:56.317Z] 07:53:56.316 [NamespaceSystem-akka.actor.default-dispatcher-4] INFO com.firebase.core.namespace.NamespaceActor - iot-sensor-f3c19-default-rtdb successfully activated FBKV (SurveyIdle(0)) wait: 761ms, init: 0ms
+ {"metadata":{"emulator":{"name":"database"},"message":"07:53:56.316 [NamespaceSystem-akka.actor.default-dispatcher-4] INFO com.firebase.core.namespace.NamespaceActor - iot-sensor-f3c19-default-rtdb successfully activated FBKV (SurveyIdle(0)) wait: 761ms, init: 0ms\n"}}
+[debug] [2024-11-08T12:53:56.676Z] 07:53:56.675 [NamespaceSystem-blocking-namespace-operation-dispatcher-6] INFO com.firebase.core.namespace.StateManager - Namespace iot-sensor-f3c19-default-rtdb status Active to Active
+ {"metadata":{"emulator":{"name":"database"},"message":"07:53:56.675 [NamespaceSystem-blocking-namespace-operation-dispatcher-6] INFO com.firebase.core.namespace.StateManager - Namespace iot-sensor-f3c19-default-rtdb status Active to Active\n"}}
+[debug] [2024-11-08T12:53:57.032Z] <<< [apiv2][status] PUT http://192.168.0.189:9001/.settings/rules.json 200
+[debug] [2024-11-08T12:53:57.035Z] <<< [apiv2][body] PUT http://192.168.0.189:9001/.settings/rules.json {"status":"ok"}
+[debug] [2024-11-08T12:53:57.054Z] Could not find VSCode notification endpoint: FetchError: request to http://localhost:40001/vscode/notify failed, reason: connect ECONNREFUSED 127.0.0.1:40001
+[info] 
+┌─────────────────────────────────────────────────────────────┐
+│ ✔  All emulators ready! It is now safe to connect your app. │
+│ i  View Emulator UI at http://192.168.0.189:4000/           │
+└─────────────────────────────────────────────────────────────┘
+
+┌───────────┬────────────────────┬─────────────────────────────────────┐
+│ Emulator  │ Host:Port          │ View in Emulator UI                 │
+├───────────┼────────────────────┼─────────────────────────────────────┤
+│ Functions │ 192.168.0.189:5001 │ http://192.168.0.189:4000/functions │
+├───────────┼────────────────────┼─────────────────────────────────────┤
+│ Database  │ 192.168.0.189:9001 │ http://192.168.0.189:4000/database  │
+├───────────┼────────────────────┼─────────────────────────────────────┤
+│ Hosting   │ 192.168.0.189:5000 │ n/a                                 │
+└───────────┴────────────────────┴─────────────────────────────────────┘
+  Emulator Hub running at 127.0.0.1:4400
+  Other reserved ports: 4500
+
+Issues? Report them at https://github.com/firebase/firebase-tools/issues and attach the *-debug.log files.
+ 
